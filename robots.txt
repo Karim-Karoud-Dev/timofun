@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://timo-fun.co.uk/sitemap.xml

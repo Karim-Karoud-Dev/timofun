@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- script-src/frame-src allow googletagmanager.com to load the GTM container.
+     connect-src/img-src additionally allow Google Analytics 4's data-collection
+     endpoints, since GA4-via-GTM (container GTM-KPWC4TVT) is installed below.
+     If further tags (ads pixels, etc.) are added inside GTM later, each may need
+     its own additional entries here. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' https://www.googletagmanager.com; style-src 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com; frame-src https://www.googletagmanager.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPWC4TVT');</script>
+<!-- End Google Tag Manager -->
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#7c3aed">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIyIiBmaWxsPSIjN2MzYWVkIi8+PHRleHQgeD0iNTAiIHk9IjcyIiBmb250LXNpemU9IjU4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7wn6eZPC90ZXh0Pjwvc3ZnPgo=">
+<link rel="canonical" href="https://timo-fun.co.uk/">
+<title>Timo Fun Learning Wizards – Spelling, Punctuation &amp; Times Tables</title>
+<meta name="description" content="Timo Fun Learning Wizards: free spelling, punctuation and times tables practice for UK primary pupils (Reception-Year 6). Adaptive quizzes for every child.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Timo Fun Learning Wizards">
+<meta property="og:title" content="Timo Fun Learning Wizards – Spelling, Punctuation &amp; Times Tables">
+<meta property="og:description" content="Timo Fun Learning Wizards: free spelling, punctuation and times tables practice for UK primary pupils (Reception-Year 6). Adaptive quizzes for every child.">
+<meta property="og:url" content="https://timo-fun.co.uk/">
+<meta property="og:locale" content="en_GB">
+<!-- Once a real 1200x630 social-share image exists, upload it and uncomment: -->
+<!-- <meta property="og:image" content="https://timo-fun.co.uk/og-image.png"> -->
+<!-- <meta property="og:image:width" content="1200"> -->
+<!-- <meta property="og:image:height" content="630"> -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Timo Fun Learning Wizards – Spelling, Punctuation &amp; Times Tables">
+<meta name="twitter:description" content="Timo Fun Learning Wizards: free spelling, punctuation and times tables practice for UK primary pupils (Reception-Year 6). Adaptive quizzes for every child.">
+<!-- <meta name="twitter:image" content="https://timo-fun.co.uk/og-image.png"> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Timo Fun Learning Wizards",
+  "alternateName": "Learning Wizards",
+  "url": "https://timo-fun.co.uk/",
+  "description": "Timo Fun Learning Wizards is a free spelling, punctuation and number facts practice app for UK primary pupils (Reception to Year 6), with adaptive quizzes for addition, subtraction, times tables, division, punctuation and capital letters.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any (web browser)",
+  "inLanguage": "en-GB",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --ink:#20232e;
+    --muted:#767c94;
+    --border:#e7e8f3;
+    --surface:#f6f7fc;
+    --card:#ffffff;
+
+    --success:#22c55e;
+    --success-dark:#159648;
+    --danger:#f43f5e;
+    --danger-dark:#c81e42;
+    --warning:#f59e0b;
+    --warning-dark:#b45309;
+    --info:#3b82f6;
+    --info-dark:#2563eb;
+    --highlight:#ec4899;
+    --highlight-dark:#c2277a;
+
+    /* Fixed brand colors for the three subjects (used on the neutral home screen) */
+    --spelling-color:#6366f1;
+    --spelling-soft:#eef0ff;
+    --times-color:#f59e0b;
+    --times-soft:#fff6e5;
+    --punct-color:#10b981;
+    --punct-soft:#e8fbf3;
+
+    /* Ambient background + primary accent: default (neutral) palette */
+    --bg1:#14b8a6;
+    --bg2:#7c3aed;
+    --accent:#7c3aed;
+    --accent-dark:#5b21b6;
+    --accent-soft:#f1ecff;
+  }
+  body.theme-spelling{
+    --bg1:#6366f1;
+    --bg2:#a855f7;
+    --accent:#6366f1;
+    --accent-dark:#4338ca;
+    --accent-soft:#eef0ff;
+  }
+  body.theme-times{
+    --bg1:#f59e0b;
+    --bg2:#fb7185;
+    --accent:#f59e0b;
+    --accent-dark:#b45309;
+    --accent-soft:#fff6e5;
+  }
+  body.theme-punctuation{
+    --bg1:#10b981;
+    --bg2:#0ea5e9;
+    --accent:#10b981;
+    --accent-dark:#047857;
+    --accent-soft:#e8fbf3;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI Rounded','Trebuchet MS','Segoe UI',Verdana,sans-serif;
+    min-height:100vh;
+    background:linear-gradient(135deg,var(--bg1),var(--bg2));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    color:var(--ink);
+    position:relative;
+    overflow-x:hidden;
+    transition:background 0.4s;
+  }
+  body::before, body::after{
+    content:'';
+    position:fixed;
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:.32;
+    z-index:0;
+    transition:background 0.4s;
+    pointer-events:none;
+  }
+  body::before{ top:-130px; left:-120px; width:320px; height:320px; background:var(--bg2); }
+  body::after{ bottom:-150px; right:-110px; width:380px; height:380px; background:var(--bg1); }
+
+  .card{
+    background:var(--card);
+    border-radius:28px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.25);
+    width:100%;
+    max-width:720px;
+    padding:40px 40px 36px;
+    position:relative;
+    overflow:hidden;
+    overflow-wrap:break-word;
+    z-index:1;
+  }
+  .card::before{
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0;
+    height:7px;
+    background:linear-gradient(90deg,var(--bg1),var(--bg2));
+  }
+  .screen{ animation:screenIn .35s ease both; }
+  @keyframes screenIn{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+
+  h1{
+    text-align:center;
+    font-size:1.9em;
+    line-height:1.15;
+    margin:0 0 6px;
+    padding:0 50px;
+    color:var(--accent-dark);
+  }
+  .subtitle{
+    text-align:center;
+    color:var(--muted);
+    margin-bottom:28px;
+    font-size:1.05em;
+  }
+  label{
+    display:block;
+    font-weight:bold;
+    margin:18px 0 8px;
+    font-size:1.05em;
+    color:var(--ink);
+  }
+  input[type="text"].name-input{
+    width:100%;
+    padding:14px 16px;
+    font-size:1.2em;
+    border-radius:14px;
+    border:3px solid var(--border);
+    outline:none;
+    font-family:inherit;
+    transition:border-color .15s;
+  }
+  input[type="text"].name-input:focus{ border-color:var(--accent); }
+
+  .mascot-row{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:var(--surface);
+    border-radius:20px;
+    padding:14px 18px;
+    margin:4px 0 26px;
+  }
+  .mascot-avatar{ width:84px; height:92px; flex-shrink:0; }
+  .mascot-avatar svg{ width:100%; height:100%; display:block; }
+  .speech-bubble{
+    position:relative;
+    background:#ffffff;
+    border:3px solid var(--border);
+    border-radius:16px;
+    padding:12px 16px;
+    font-size:0.95em;
+    line-height:1.45;
+    color:var(--ink);
+  }
+  .speech-bubble strong{ display:block; color:var(--accent-dark); font-size:1.15em; margin-bottom:2px; }
+  .speech-bubble::before{
+    content:'';
+    position:absolute;
+    left:-11px;
+    top:50%;
+    transform:translateY(-50%);
+    border-width:8px 11px 8px 0;
+    border-style:solid;
+    border-color:transparent var(--border) transparent transparent;
+  }
+  .speech-bubble::after{
+    content:'';
+    position:absolute;
+    left:-8px;
+    top:50%;
+    transform:translateY(-50%);
+    border-width:7px 9px 7px 0;
+    border-style:solid;
+    border-color:transparent #ffffff transparent transparent;
+  }
+
+  .subject-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:14px;
+    margin-top:10px;
+  }
+  .subject-card{
+    background:var(--surface);
+    border:3px solid var(--border);
+    border-radius:20px;
+    padding:22px 12px;
+    text-align:center;
+    cursor:pointer;
+    transition:.15s;
+    font-family:inherit;
+  }
+  .subject-card:hover{ transform:translateY(-3px); box-shadow:0 10px 22px rgba(0,0,0,0.1); }
+  .subject-card.card-spelling:hover{ border-color:var(--spelling-color); }
+  .subject-card.card-times:hover{ border-color:var(--times-color); }
+  .subject-card.card-punctuation:hover{ border-color:var(--punct-color); }
+  .subject-icon{
+    font-size:1.9em;
+    width:68px;
+    height:68px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 12px;
+  }
+  .card-spelling .subject-icon{ background:var(--spelling-soft); }
+  .card-times .subject-icon{ background:var(--times-soft); }
+  .card-punctuation .subject-icon{ background:var(--punct-soft); }
+  .subject-title{ font-size:1.1em; font-weight:bold; color:var(--ink); margin-bottom:4px; }
+  .subject-desc{ font-size:0.78em; color:var(--muted); }
+
+  .back-btn{
+    background:#eaf2ff;
+    color:var(--info-dark);
+    border:2px solid #cfe0ff;
+    border-radius:10px;
+    padding:6px 14px;
+    font-weight:bold;
+    font-size:0.9em;
+    font-family:inherit;
+    cursor:pointer;
+    margin-bottom:14px;
+    transition:.15s;
+  }
+  .back-btn:hover{ background:#dcebff; }
+
+  .step-dots{
+    display:flex;
+    justify-content:center;
+    gap:9px;
+    margin:2px 0 22px;
+  }
+  .step-dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--border);
+    transition:.2s;
+  }
+  .step-dot.done{ background:var(--accent); opacity:0.4; }
+  .step-dot.active{ background:var(--accent); opacity:1; transform:scale(1.4); }
+  .step-name-input{ text-align:center; font-size:1.4em; }
+
+  .year-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+  }
+  .year-btn{
+    padding:16px 4px;
+    border-radius:16px;
+    border:3px solid var(--border);
+    background:var(--surface);
+    font-size:1.3em;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.15s;
+    color:var(--ink);
+  }
+  .year-btn:hover{ border-color:var(--accent); }
+  .year-btn.selected{
+    background:var(--accent);
+    border-color:var(--accent-dark);
+    color:white;
+    transform:scale(1.06);
+  }
+
+  .table-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:8px;
+  }
+  .table-btn{
+    padding:14px 2px;
+    border-radius:14px;
+    border:3px solid var(--border);
+    background:var(--surface);
+    font-size:1.05em;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.15s;
+    color:var(--ink);
+  }
+  .table-btn:hover{ border-color:var(--accent); }
+  .table-btn.selected{
+    background:var(--accent);
+    border-color:var(--accent-dark);
+    color:white;
+    transform:scale(1.06);
+  }
+  .table-btn:disabled{ opacity:0.35; cursor:not-allowed; }
+  .table-btn:disabled:hover{ border-color:var(--border); }
+
+  .op-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+  .op-btn{
+    padding:14px 4px;
+    border-radius:14px;
+    border:3px solid var(--border);
+    background:var(--surface);
+    font-size:1em;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.15s;
+    color:var(--ink);
+    line-height:1.4;
+  }
+  .op-btn.op-wide{ grid-column:1 / -1; }
+  .op-btn:hover{ border-color:var(--highlight); }
+  .op-btn.selected{
+    background:var(--highlight);
+    border-color:var(--highlight-dark);
+    color:white;
+    transform:scale(1.05);
+  }
+  .op-btn:disabled{ cursor:not-allowed; }
+
+  .mode-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+  .mode-btn{
+    width:100%;
+    padding:16px;
+    border-radius:16px;
+    border:3px solid var(--border);
+    background:var(--surface);
+    cursor:pointer;
+    text-align:left;
+    font-family:inherit;
+    font-size:1em;
+    transition:.15s;
+  }
+  .mode-btn strong{ display:block; font-size:1.15em; margin-bottom:4px;}
+  .mode-btn small{ color:var(--muted); }
+  .mode-btn.selected{
+    border-color:var(--highlight);
+    background:#fff0f7;
+  }
+
+  .big-btn{
+    display:block;
+    width:100%;
+    margin-top:26px;
+    padding:16px;
+    font-size:1.3em;
+    font-weight:bold;
+    border:none;
+    border-radius:16px;
+    background:var(--accent);
+    color:white;
+    cursor:pointer;
+    transition:transform .08s, box-shadow .08s, filter .15s;
+    box-shadow:0 5px 0 var(--accent-dark);
+    font-family:inherit;
+  }
+  .big-btn:hover{ filter:brightness(1.06); }
+  .big-btn:active{ transform:translateY(4px); box-shadow:0 1px 0 var(--accent-dark); }
+  .big-btn:disabled{ background:#d3d5e0; box-shadow:0 5px 0 #b7b9c8; cursor:not-allowed; filter:none; }
+  .big-btn.btn-success{ background:var(--success); box-shadow:0 5px 0 var(--success-dark); }
+  .big-btn.btn-info{ background:var(--info); box-shadow:0 5px 0 var(--info-dark); }
+  .big-btn.btn-warning{ background:var(--warning); color:var(--ink); box-shadow:0 5px 0 var(--warning-dark); }
+
+  .link-btn{
+    display:block;
+    text-align:center;
+    margin-top:16px;
+    color:var(--accent-dark);
+    font-weight:bold;
+    cursor:pointer;
+    background:none;
+    border:none;
+    font-size:1em;
+    text-decoration:underline;
+    width:100%;
+  }
+
+  /* ---- Quiz screen ---- */
+  .quiz-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    margin-bottom:14px;
+    flex-wrap:wrap;
+  }
+  .level-pill{
+    background:var(--accent-soft);
+    color:var(--accent-dark);
+    font-weight:bold;
+    font-size:0.85em;
+    padding:7px 14px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .score-pill{
+    background:#fff7e0;
+    color:#8a5a00;
+    font-weight:bold;
+    font-size:0.9em;
+    padding:7px 14px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .exit-btn{
+    background:#ffeaee;
+    color:var(--danger-dark);
+    border:2px solid #ffd2da;
+    border-radius:10px;
+    padding:6px 14px;
+    font-weight:bold;
+    font-size:0.9em;
+    font-family:inherit;
+    cursor:pointer;
+    white-space:nowrap;
+    flex-shrink:0;
+    transition:.15s;
+  }
+  .exit-btn:hover{ background:#ffdbe2; }
+  .progress-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:6px;
+  }
+  .progress-bar-outer{
+    flex:1;
+    height:14px;
+    background:var(--surface);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .progress-bar-inner{
+    height:100%;
+    background:var(--accent);
+    transition:width .3s;
+  }
+  .progress-count{
+    font-size:0.85em;
+    font-weight:bold;
+    color:var(--muted);
+    white-space:nowrap;
+  }
+  .timer-bar-outer{
+    height:10px;
+    background:var(--surface);
+    border-radius:8px;
+    overflow:hidden;
+    margin-bottom:22px;
+  }
+  .timer-bar-inner{
+    height:100%;
+    background:var(--danger);
+    transition:width 1s linear;
+  }
+  .speak-btn{
+    display:block;
+    margin:18px auto 0;
+    padding:10px 20px;
+    border-radius:14px;
+    border:2px solid var(--info);
+    background:#eaf3ff;
+    color:var(--info-dark);
+    font-weight:bold;
+    font-family:inherit;
+    font-size:1em;
+    cursor:pointer;
+    transition:.15s;
+  }
+  .speak-btn:hover{ background:#dcebff; }
+  .word-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+    margin:36px 0;
+  }
+  .letter-tile, .blank-tile{
+    width:52px;
+    height:60px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8em;
+    font-weight:bold;
+    text-transform:lowercase;
+  }
+  .letter-tile{
+    background:var(--accent-soft);
+    color:var(--accent-dark);
+  }
+  .blank-tile input{
+    width:100%;
+    height:100%;
+    border:3px solid var(--accent);
+    border-radius:12px;
+    text-align:center;
+    font-size:1em;
+    font-weight:bold;
+    text-transform:lowercase;
+    outline:none;
+    font-family:inherit;
+    transition:border-color .15s, background .15s;
+  }
+  .blank-tile input:focus{ border-color:var(--highlight); background:#fff5f9;}
+  .equation-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin:36px 0;
+    font-size:2.2em;
+    font-weight:bold;
+    color:var(--accent-dark);
+    flex-wrap:wrap;
+  }
+  .equation-box .answer-input{
+    width:110px;
+    height:78px;
+    border:3px solid var(--accent);
+    border-radius:14px;
+    text-align:center;
+    font-size:0.85em;
+    font-weight:bold;
+    outline:none;
+    font-family:inherit;
+    color:var(--ink);
+    transition:border-color .15s, background .15s;
+  }
+  .equation-box .answer-input:focus{ border-color:var(--highlight); background:#fff5f9; }
+
+  /* ---- Punctuation / capital-letter tap-to-choose questions ---- */
+  .sentence-box{
+    text-align:center;
+    font-size:1.5em;
+    font-weight:600;
+    color:var(--ink);
+    line-height:1.7;
+    margin:30px 0 24px;
+    padding:0 4px;
+  }
+  .sentence-blank{
+    display:inline-block;
+    min-width:30px;
+    border-bottom:4px solid var(--accent);
+    margin:0 2px;
+  }
+  .choice-row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin:0 0 10px;
+  }
+  .choice-btn{
+    padding:14px 20px;
+    border-radius:14px;
+    border:3px solid var(--border);
+    background:var(--surface);
+    font-size:1.3em;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.15s;
+    color:var(--ink);
+    font-family:inherit;
+    min-width:56px;
+  }
+  .choice-btn.word-chip{ font-size:1.05em; padding:10px 14px; min-width:0; }
+  .choice-btn:hover{ border-color:var(--accent); }
+  .choice-btn.selected{
+    background:var(--accent);
+    border-color:var(--accent-dark);
+    color:white;
+    transform:scale(1.06);
+  }
+  .choice-btn:disabled{ cursor:not-allowed; }
+  .choice-btn.choice-correct{ background:var(--success); border-color:var(--success-dark); color:white; }
+  .choice-btn.choice-wrong{ background:var(--danger); border-color:var(--danger-dark); color:white; }
+
+  .feedback{
+    text-align:center;
+    font-size:1.3em;
+    font-weight:bold;
+    min-height:1.6em;
+    margin-bottom:10px;
+  }
+  .feedback.correct{ color:var(--success-dark); animation:popIn .3s; }
+  .feedback.wrong{ color:var(--danger-dark); }
+
+  @keyframes popIn{
+    0%{ transform:scale(0.7); opacity:0; }
+    60%{ transform:scale(1.08); opacity:1; }
+    100%{ transform:scale(1); }
+  }
+  @keyframes tilePop{
+    0%{ transform:scale(1); }
+    50%{ transform:scale(1.14); }
+    100%{ transform:scale(1); }
+  }
+  @keyframes tileShake{
+    10%,90%{ transform:translateX(-2px); }
+    20%,80%{ transform:translateX(4px); }
+    30%,50%,70%{ transform:translateX(-7px); }
+    40%,60%{ transform:translateX(7px); }
+  }
+  .tile-correct{ animation:tilePop .35s ease; }
+  .tile-wrong{ animation:tileShake .45s ease; }
+
+  .quiz-buttons{
+    display:flex;
+    gap:12px;
+  }
+  .quiz-buttons .big-btn{ margin-top:12px; }
+
+  /* ---- Results ---- */
+  .medal{
+    width:104px;
+    height:104px;
+    border-radius:50%;
+    margin:6px auto 4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2.8em;
+    box-shadow:0 6px 14px rgba(0,0,0,0.18);
+    animation:medalPop .5s ease both;
+  }
+  @keyframes medalPop{
+    0%{ transform:scale(0.4); opacity:0; }
+    70%{ transform:scale(1.08); opacity:1; }
+    100%{ transform:scale(1); }
+  }
+  .medal-platinum{ background:linear-gradient(135deg,#eef1f6,#c3c9d9); }
+  .medal-gold{ background:linear-gradient(135deg,#ffe27a,#f2a90f); }
+  .medal-silver{ background:linear-gradient(135deg,#eef0f5,#aab2c5); }
+  .medal-bronze{ background:linear-gradient(135deg,#eab887,#b5722f); }
+  .medal-practice{ background:linear-gradient(135deg,var(--accent-soft),#c9c2f7); }
+
+  .score-big{
+    text-align:center;
+    font-size:3.2em;
+    font-weight:bold;
+    color:var(--accent-dark);
+    margin:10px 0 0;
+  }
+  .badge{
+    text-align:center;
+    font-size:1.6em;
+    font-weight:bold;
+    margin:6px 0 20px;
+    color:var(--ink);
+  }
+  table.leaderboard{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+  }
+  table.leaderboard th, table.leaderboard td{
+    text-align:left;
+    padding:8px 10px;
+    border-bottom:1px solid var(--border);
+  }
+  table.leaderboard th{ color:var(--muted); font-size:.9em; }
+  table.leaderboard tr:first-child td{ font-weight:bold; color:var(--accent-dark); }
+
+  .hidden{ display:none !important; }
+
+  /* ---- Home links, mute toggle ---- */
+  .mute-toggle{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:var(--surface);
+    border:2px solid var(--border);
+    border-radius:50%;
+    width:38px;
+    height:38px;
+    font-size:1.1em;
+    cursor:pointer;
+    z-index:2;
+  }
+  .mute-toggle:hover{ border-color:var(--accent); }
+  .home-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px 18px;
+    margin-top:20px;
+  }
+  .home-links button{
+    background:none;
+    border:none;
+    color:var(--accent-dark);
+    font-weight:bold;
+    font-size:0.9em;
+    cursor:pointer;
+    text-decoration:underline;
+    font-family:inherit;
+    padding:4px;
+  }
+
+  /* ---- Streak / badge callouts on Results ---- */
+  .streak-banner{
+    text-align:center;
+    background:#fff3e0;
+    color:#9a5b00;
+    font-weight:bold;
+    border-radius:12px;
+    padding:8px 12px;
+    margin:0 0 10px;
+  }
+  .new-badge-banner{
+    text-align:center;
+    background:var(--accent-soft);
+    color:var(--accent-dark);
+    font-weight:bold;
+    border-radius:12px;
+    padding:8px 12px;
+    margin:0 0 10px;
+    line-height:1.6;
+  }
+
+  /* ---- My Progress ---- */
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin:8px 0 20px;
+  }
+  .stat-tile{
+    background:var(--surface);
+    border-radius:14px;
+    padding:14px 6px;
+    text-align:center;
+  }
+  .stat-num{ font-size:1.5em; font-weight:bold; color:var(--accent-dark); }
+  .stat-label{ font-size:0.78em; color:var(--muted); margin-top:2px; }
+  .badge-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+  }
+  .badge-item{
+    background:var(--surface);
+    border-radius:14px;
+    padding:12px 4px;
+    text-align:center;
+    opacity:0.45;
+  }
+  .badge-item.earned{ opacity:1; background:var(--accent-soft); }
+  .badge-icon{ font-size:1.8em; }
+  .badge-name{ font-size:0.72em; font-weight:bold; margin-top:4px; color:var(--ink); }
+  .history-list{ display:flex; flex-direction:column; gap:6px; }
+  .history-row{
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+    background:var(--surface);
+    border-radius:10px;
+    padding:8px 12px;
+    font-size:0.88em;
+  }
+
+  /* ---- Class Insights ---- */
+  .insight-list{ display:flex; flex-direction:column; gap:6px; margin-bottom:8px; }
+  .insight-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--surface);
+    border-radius:10px;
+    padding:9px 14px;
+  }
+  .insight-count{ font-size:0.82em; color:var(--danger-dark); font-weight:bold; white-space:nowrap; }
+
+  /* ---- About ---- */
+  .about-content p{ line-height:1.6; margin:0 0 14px; color:var(--ink); }
+  .about-content strong{ color:var(--accent-dark); }
+
+  @media print{
+    body{ background:white !important; }
+    body::before, body::after{ display:none !important; }
+    .back-btn, .big-btn, .link-btn, .quiz-buttons, .mute-toggle, .home-links{ display:none !important; }
+    .card{ box-shadow:none; }
+  }
+
+  .confetti{
+    position:absolute;
+    top:-10px;
+    width:10px;
+    height:10px;
+    opacity:.9;
+    animation:fall linear forwards;
+  }
+  @keyframes fall{
+    to{ transform:translateY(500px) rotate(360deg); opacity:0; }
+  }
+
+  @media (max-width:480px){
+    .card{ padding:26px 18px; }
+    .year-grid{ grid-template-columns:repeat(5,1fr); gap:6px; }
+    .year-btn{ font-size:1.05em; padding:12px 2px; }
+    .letter-tile, .blank-tile{ width:40px; height:48px; font-size:1.4em; }
+    .quiz-header{ justify-content:center; text-align:center; }
+    .subject-grid{ grid-template-columns:1fr; }
+    .table-grid{ gap:5px; }
+    .table-btn{ font-size:0.85em; padding:10px 1px; }
+    .op-btn{ font-size:0.85em; padding:10px 2px; }
+    .equation-box{ font-size:1.6em; gap:8px; }
+    .equation-box .answer-input{ width:80px; height:60px; }
+    .sentence-box{ font-size:1.15em; }
+    .choice-btn{ font-size:1.1em; padding:10px 14px; min-width:44px; }
+    .choice-btn.word-chip{ font-size:0.95em; padding:8px 12px; }
+    .mascot-row{ flex-direction:column; text-align:center; }
+    .speech-bubble::before, .speech-bubble::after{ display:none; }
+    .badge-grid{ grid-template-columns:repeat(3,1fr); }
+    .stat-row{ grid-template-columns:repeat(3,1fr); gap:6px; }
+    .stat-num{ font-size:1.2em; }
+    .history-row{ font-size:0.8em; }
+    .mute-toggle{ top:12px; right:12px; width:34px; height:34px; }
+    h1{ padding:0 44px; font-size:1.3em; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPWC4TVT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<noscript>
+  <div style="max-width:600px;margin:60px auto;padding:24px;font-family:sans-serif;text-align:center;color:#20232e;">
+    <h1>Timo Fun Learning Wizards</h1>
+    <p>Free spelling, punctuation and number facts practice for UK primary school children (Reception to Year 6). This app needs JavaScript enabled to run &mdash; please enable JavaScript in your browser and reload the page.</p>
+  </div>
+</noscript>
+
+<div class="card" id="app"></div>
+
+<script>
+/* ---------------- Word lists (UK National Curriculum spelling words, Appendix 1) ---------------- */
+const WORDS_Y2 = ["because","everybody","beautiful","different","climb","children","behind","pretty",
+  "hour","improve","clothes","busy","people","water","again","money","christmas","parents","floor",
+  "door","poor","mind","kind","wild","most","cold","gold","hold","told","great","break","steak",
+  "class","grass","plant","path","bath","sure","sugar","could","would","should","whole","many","every"];
+
+const WORDS_Y34 = ["accident","accidentally","actual","actually","address","answer","appear","arrive",
+  "believe","bicycle","breath","breathe","build","business","calendar","caught","centre","century",
+  "certain","circle","complete","consider","continue","decide","describe","different","difficult",
+  "disappear","early","earth","eight","eighth","enough","exercise","experience","experiment","extreme",
+  "famous","favourite","february","forward","forwards","fruit","grammar","group","guard","guide","heard",
+  "heart","height","history","imagine","increase","important","interest","island","knowledge","learn",
+  "length","library","material","medicine","mention","minute","natural","naughty","notice","occasion",
+  "occasionally","often","opposite","ordinary","particular","peculiar","perhaps","popular","position",
+  "possess","possession","possible","potatoes","pressure","probably","promise","purpose","quarter",
+  "question","recent","regular","reign","remember","sentence","separate","special","straight","strange",
+  "strength","suppose","surprise","therefore","though","although","thought","through","various","weight",
+  "woman","women"];
+
+const WORDS_Y56 = ["accommodate","accompany","according","achieve","aggressive","amateur","ancient",
+  "apparent","appreciate","attached","available","average","awkward","bargain","bruise","category",
+  "cemetery","committee","communicate","community","competition","conscience","conscious","controversy",
+  "convenience","correspond","criticise","curiosity","definite","desperate","determined","develop",
+  "dictionary","disastrous","embarrass","environment","equip","equipped","equipment","especially",
+  "exaggerate","excellent","existence","explanation","familiar","foreign","forty","frequently",
+  "government","guarantee","harass","hindrance","identity","immediate","immediately","individual",
+  "interfere","interrupt","language","leisure","lightning","marvellous","mischievous","muscle","necessary",
+  "neighbour","nuisance","occupy","occur","opportunity","parliament","persuade","physical","prejudice",
+  "privilege","profession","programme","pronunciation","queue","recognise","recommend","relevant",
+  "restaurant","rhyme","rhythm","sacrifice","secretary","shoulder","signature","sincere","sincerely",
+  "soldier","stomach","sufficient","suggest","symbol","system","temperature","thorough","twelfth",
+  "variety","vegetable","vehicle","yacht"];
+
+const YEAR_CONFIG = {
+  2:{ label:"Year 2", words:WORDS_Y2, blanks:(w)=> 1 },
+  3:{ label:"Year 3", words:WORDS_Y34, blanks:(w)=> w.length>=9 ? 2 : 1 },
+  4:{ label:"Year 4", words:WORDS_Y34, blanks:(w)=> w.length>=10 ? 3 : (w.length<=5 ? 1 : 2) },
+  5:{ label:"Year 5", words:WORDS_Y56, blanks:(w)=> w.length>=10 ? 3 : (w.length<=6 ? 1 : 2) },
+  6:{ label:"Year 6", words:WORDS_Y56, blanks:(w)=> w.length>=9 ? 3 : (w.length<=5 ? 1 : 2) },
+};
+
+const TEST_SECONDS_PER_Q = 25;
+const QUESTIONS_PER_TEST = 20;
+const LB_KEY = "wordWizardsLeaderboard";
+const STATS_KEY = "wordWizardsStats";
+const PROGRESS_KEY = "wordWizardsProgress";
+const MUTE_KEY = "wordWizardsMuted";
+
+/* ---------------- State ---------------- */
+let state = {};
+
+/* localStorage.setItem/removeItem can throw (quota exceeded, storage disabled
+   by browser settings, some private-browsing modes) — wrap so a save failure
+   degrades gracefully instead of crashing the app mid-quiz. */
+function safeSetItem(key, value){
+  try{ localStorage.setItem(key, value); return true; }
+  catch(e){ return false; }
+}
+function safeRemoveItem(key){
+  try{ localStorage.removeItem(key); return true; }
+  catch(e){ return false; }
+}
+
+function applyTheme(subject){
+  document.body.classList.remove('theme-spelling','theme-times','theme-punctuation');
+  if(subject) document.body.classList.add('theme-'+subject);
+}
+
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+/* ---- Spaced-repetition stats: keyed by subject+level, then by word/fact (stored in this browser) ---- */
+function loadAllStats(){
+  try{ return JSON.parse(localStorage.getItem(STATS_KEY)) || {}; }
+  catch(e){ return {}; }
+}
+function loadLevelStats(levelKey){
+  return loadAllStats()[levelKey] || {};
+}
+function saveStat(levelKey, factKey, isCorrect){
+  const all = loadAllStats();
+  if(!all[levelKey]) all[levelKey] = {};
+  if(!all[levelKey][factKey]) all[levelKey][factKey] = { correct:0, wrong:0 };
+  if(isCorrect) all[levelKey][factKey].correct += 1;
+  else all[levelKey][factKey].wrong += 1;
+  safeSetItem(STATS_KEY, JSON.stringify(all));
+}
+
+/* ---- Per-student progress: streaks, badges, history (stored in this browser, keyed by name) ---- */
+/* Uses local calendar date (not toISOString, which is UTC) so streaks and
+   history dates match the student's actual day, not UTC's. */
+function formatLocalDate(d){
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,'0');
+  const dd = String(d.getDate()).padStart(2,'0');
+  return `${yyyy}-${mm}-${dd}`;
+}
+function todayStr(){
+  return formatLocalDate(new Date());
+}
+function loadAllProgress(){
+  try{ return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {}; }
+  catch(e){ return {}; }
+}
+function saveAllProgress(all){
+  safeSetItem(PROGRESS_KEY, JSON.stringify(all));
+}
+function blankProgress(){
+  return { totalCorrect:0, totalAnswered:0, streak:{ count:0, lastDate:null }, badges:[], history:[] };
+}
+/* Student names are typed freely and used as object keys below. A name like
+   "__proto__" would otherwise resolve through the prototype chain instead of
+   being a normal missing key — guard against that and the other dangerous keys. */
+function safeKey(name){
+  const s = String(name);
+  return (s==='__proto__' || s==='constructor' || s==='prototype') ? ('_'+s) : s;
+}
+function getStudentProgress(name){
+  const all = loadAllProgress();
+  return (Object.prototype.hasOwnProperty.call(all, safeKey(name)) && all[safeKey(name)]) || blankProgress();
+}
+function updateStreak(progress){
+  const today = todayStr();
+  if(progress.streak.lastDate === today) return; // already counted today
+  const yesterday = formatLocalDate(new Date(Date.now() - 86400000));
+  progress.streak.count = (progress.streak.lastDate === yesterday) ? progress.streak.count + 1 : 1;
+  progress.streak.lastDate = today;
+}
+
+const BADGES = [
+  { id:'first_quiz',    icon:'🌟', name:'First Steps',      desc:'Complete your first quiz',        check:p=> p.history.length>=1 },
+  { id:'perfect_score', icon:'💯', name:'Perfect Score',     desc:'Get 100% on a quiz',               check:p=> p.history.some(h=>h.score===h.total) },
+  { id:'streak_3',      icon:'🔥', name:'3-Day Streak',      desc:'Practise 3 days in a row',         check:p=> p.streak.count>=3 },
+  { id:'streak_7',      icon:'🔥', name:'Week Warrior',      desc:'Practise 7 days in a row',         check:p=> p.streak.count>=7 },
+  { id:'correct_50',    icon:'🎯', name:'Sharp Shooter',     desc:'Answer 50 questions correctly',    check:p=> p.totalCorrect>=50 },
+  { id:'correct_100',   icon:'🏅', name:'Century Club',      desc:'Answer 100 questions correctly',   check:p=> p.totalCorrect>=100 },
+  { id:'both_subjects', icon:'🌈', name:'All-Rounder',       desc:'Try two different subjects', check:p=> new Set(p.history.map(h=>h.subject)).size>=2 },
+  { id:'quiz_10',       icon:'📚', name:'Dedicated Learner', desc:'Complete 10 quizzes',              check:p=> p.history.length>=10 },
+];
+
+/* Records the just-finished quiz against the student's progress, updates their
+   streak, and returns any badges newly earned this time (for a results-screen callout). */
+function recordProgress(){
+  if(!state.name) return [];
+  const key = safeKey(state.name);
+  const all = loadAllProgress();
+  const p = (Object.prototype.hasOwnProperty.call(all, key) && all[key]) || blankProgress();
+  p.totalCorrect += state.score;
+  p.totalAnswered += state.questions.length;
+  updateStreak(p);
+  p.history.push({ date: todayStr(), subject: state.subject, levelLabel: state.levelLabel, score: state.score, total: state.questions.length });
+  if(p.history.length > 100) p.history = p.history.slice(-100);
+  const newlyEarned = [];
+  BADGES.forEach(b=>{
+    if(!p.badges.includes(b.id) && b.check(p)){
+      p.badges.push(b.id);
+      newlyEarned.push(b);
+    }
+  });
+  all[key] = p;
+  saveAllProgress(all);
+  return newlyEarned;
+}
+
+/* ---- Sound effects (synthesised, no audio files needed) ---- */
+let audioCtx = null;
+function playTone(freq, duration, delay){
+  if(state.muted) return;
+  try{
+    if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    const t0 = audioCtx.currentTime + (delay||0);
+    gain.gain.setValueAtTime(0.0001, t0);
+    gain.gain.exponentialRampToValueAtTime(0.16, t0+0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t0+duration);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(t0);
+    osc.stop(t0+duration+0.05);
+  } catch(e){ /* audio unavailable (e.g. autoplay restrictions) — fail silently */ }
+}
+function playCorrectSound(){
+  playTone(523.25, 0.12, 0);   // C5
+  playTone(783.99, 0.18, 0.1); // G5
+}
+function playWrongSound(){
+  playTone(196, 0.25, 0); // low, gentle — not harsh
+}
+function loadMuted(){
+  try{ return localStorage.getItem(MUTE_KEY) === 'true'; }
+  catch(e){ return false; }
+}
+function toggleMuted(){
+  state.muted = !state.muted;
+  safeSetItem(MUTE_KEY, String(state.muted));
+}
+
+/* Weighted sample without replacement (Efraimidis-Spirakis): words/facts missed before
+   are more likely to be picked; ones answered correctly several times in a row
+   show up less often. */
+function weightedSample(items, weights, n){
+  const keyed = items.map((it,i)=> ({ it, key: Math.pow(Math.random(), 1/Math.max(weights[i], 0.05)) }));
+  keyed.sort((a,b)=> b.key - a.key);
+  return keyed.slice(0, Math.min(n, keyed.length)).map(k=>k.it);
+}
+
+/* Like weightedSample, but if the pool is smaller than n, fills the remainder
+   with weighted picks WITH replacement so a test always has n questions. */
+function weightedFill(items, weights, n){
+  const first = weightedSample(items, weights, n);
+  if(first.length >= n || items.length===0) return first;
+  const totalWeight = weights.reduce((a,b)=>a+b, 0);
+  const filler = [];
+  for(let i=0; i<n-first.length; i++){
+    let r = Math.random() * totalWeight;
+    let picked = items[items.length-1];
+    for(let j=0;j<items.length;j++){
+      r -= weights[j];
+      if(r<=0){ picked = items[j]; break; }
+    }
+    filler.push(picked);
+  }
+  return shuffle([...first, ...filler]);
+}
+
+/* ---- Spelling questions ---- */
+function makeQuestion(word, cfg){
+  const blankCount = Math.min(cfg.blanks(word), word.length-1);
+  const positions = shuffle([...Array(word.length).keys()].slice(1)).slice(0, blankCount).sort((a,b)=>a-b);
+  return { word, positions };
+}
+
+function buildSpellingQuestions(year){
+  const cfg = YEAR_CONFIG[year];
+  const stats = loadLevelStats(`spelling-${year}`);
+  const weights = cfg.words.map(w=>{
+    const s = stats[w] || { correct:0, wrong:0 };
+    if(s.correct>=3 && s.wrong===0) return 0.4;
+    return 1 + s.wrong*2;
+  });
+  const pool = weightedFill(cfg.words, weights, QUESTIONS_PER_TEST);
+  return pool.map(w=>makeQuestion(w, cfg));
+}
+
+/* ---- Number facts questions (+ - × ÷) ---- */
+
+/* Year group difficulty: how big the "partner" number can be, and how often the
+   blank appears in the answer spot vs. as a missing operand (a trickier "find the
+   missing number" style question). Younger years always get the classic
+   "a op b = ?" layout; older years mix in "a op ? = c" and "? op b = c". */
+const NF_YEAR_CONFIG = {
+  R:{ label:'Reception', multiplierMax:5,  blankWeights:{ result:1,    left:0,     right:0 } },
+  1:{ label:'Year 1',    multiplierMax:10, blankWeights:{ result:1,    left:0,     right:0 } },
+  2:{ label:'Year 2',    multiplierMax:12, blankWeights:{ result:0.7,  left:0.15,  right:0.15 } },
+  3:{ label:'Year 3',    multiplierMax:12, blankWeights:{ result:0.5,  left:0.25,  right:0.25 } },
+  4:{ label:'Year 4',    multiplierMax:12, blankWeights:{ result:0.4,  left:0.3,   right:0.3 } },
+  5:{ label:'Year 5',    multiplierMax:12, blankWeights:{ result:0.35, left:0.325, right:0.325 } },
+  6:{ label:'Year 6',    multiplierMax:12, blankWeights:{ result:0.3,  left:0.35,  right:0.35 } },
+};
+function currentNfYearConfig(){
+  return NF_YEAR_CONFIG[state.nfYear] || NF_YEAR_CONFIG['4'];
+}
+
+const OP_CODE = { '×':'x', '÷':'d', '+':'a', '-':'s' };
+function factKeyFor(table, multiplier, op){
+  return `${table}_${multiplier}_${OP_CODE[op]}`;
+}
+
+/* Which slot(s) can safely be blanked without the question becoming ambiguous
+   (e.g. "0 × ? = 0" or "0 ÷ ? = 0" have infinitely many correct answers). */
+function validBlankSlots(op, left, right, result){
+  const slots = ['left','right','result'];
+  if(op==='×') return slots.filter(s => !(s==='left' && right===0) && !(s==='right' && left===0));
+  if(op==='÷') return slots.filter(s => !(s==='right' && result===0));
+  return slots; // + and - are always unambiguous in any slot
+}
+
+function pickBlankSlot(op, left, right, result){
+  const valid = validBlankSlots(op, left, right, result);
+  const weights = currentNfYearConfig().blankWeights;
+  const w = valid.map(s => weights[s]);
+  const total = w.reduce((a,b)=>a+b, 0);
+  if(total<=0) return valid[0] || 'result';
+  let r = Math.random() * total;
+  for(let i=0;i<valid.length;i++){
+    r -= w[i];
+    if(r<=0) return valid[i];
+  }
+  return valid[valid.length-1];
+}
+
+function makeTimesQuestion(f){
+  let left,right,result;
+  if(f.op==='×'){ left=f.table; right=f.multiplier; result=left*right; }
+  else if(f.op==='÷'){ left=f.table*f.multiplier; right=f.table; result=f.multiplier; }
+  else if(f.op==='+'){ left=f.table; right=f.multiplier; result=left+right; }
+  else { left=f.table+f.multiplier; right=f.table; result=f.multiplier; } // subtraction: (table+multiplier) - table = multiplier
+
+  const blank = pickBlankSlot(f.op, left, right, result);
+  const answer = blank==='left' ? left : blank==='right' ? right : result;
+
+  return { table:f.table, multiplier:f.multiplier, op:f.op, left, right, result, blank, answer, factKey: factKeyFor(f.table, f.multiplier, f.op) };
+}
+
+const OPS_FOR = { mult:['×'], div:['÷'], add:['+'], sub:['-'], mixed:['×','÷','+','-'] };
+
+function buildTimesQuestions(table, operation){
+  const levelKey = `times-${state.nfYear}-${table}-${operation}`;
+  const stats = loadLevelStats(levelKey);
+  const tables = table==='mixed' ? [...Array(13).keys()] : [table];
+  const ops = OPS_FOR[operation];
+  const multiplierMax = currentNfYearConfig().multiplierMax;
+  let facts = [];
+  for(const t of tables){
+    for(let m=0; m<=multiplierMax; m++){
+      for(const op of ops){
+        if(op==='÷' && t===0) continue; // division by zero is invalid
+        facts.push({ table:t, multiplier:m, op });
+      }
+    }
+  }
+  if(facts.length===0){
+    // Only reachable if table is 0 and operation is division-only; 0 has no valid division facts.
+    for(let m=0; m<=multiplierMax; m++) facts.push({ table:0, multiplier:m, op:'×' });
+  }
+  const weights = facts.map(f=>{
+    const key = factKeyFor(f.table, f.multiplier, f.op);
+    const s = stats[key] || { correct:0, wrong:0 };
+    if(s.correct>=3 && s.wrong===0) return 0.4;
+    return 1 + s.wrong*2;
+  });
+  const chosen = weightedFill(facts, weights, QUESTIONS_PER_TEST);
+  return chosen.map(makeTimesQuestion);
+}
+
+/* ---- Punctuation & capital letters (UK National Curriculum, Appendix 2) ----
+   Two question kinds:
+   - "punct": a sentence with one gap where a punctuation mark belongs; tap the
+     correct mark from a few plausible choices.
+   - "capital": a full, correctly-cased sentence where exactly one word is
+     shown lower-cased; tap the word that needs a capital letter. */
+const PUNCT_YEAR_LABELS = { 1:"Year 1", 2:"Year 2", 3:"Year 3", 4:"Year 4", 5:"Year 5", 6:"Year 6" };
+const PUNCT_TYPE_LABEL = { punct:'✍️ Punctuation', capital:'🔠 Capital Letters', mixed:'🔀 Mixed' };
+
+const PUNCT_BANK = {
+  1: [
+    { before:"I have a pet dog", after:"", answer:'.', choices:['.','?','!'] },
+    { before:"My favourite colour is blue", after:"", answer:'.', choices:['.','!','?'] },
+    { before:"What is your name", after:"", answer:'?', choices:['?','.','!'] },
+    { before:"Can you swim", after:"", answer:'?', choices:['?','.','!'] },
+    { before:"Where do you live", after:"", answer:'?', choices:['?','.','!'] },
+    { before:"Wow, look at that", after:"", answer:'!', choices:['!','.','?'] },
+    { before:"Watch out", after:"", answer:'!', choices:['!','.','?'] },
+    { before:"I can jump so high", after:"", answer:'!', choices:['!','.','?'] },
+    { before:"We went to the park", after:"", answer:'.', choices:['.','!','?'] },
+    { before:"Is it raining", after:"", answer:'?', choices:['?','.','!'] },
+    { before:"Hooray, we won", after:"", answer:'!', choices:['!','.','?'] },
+    { before:"The cat is asleep", after:"", answer:'.', choices:['.','?','!'] },
+  ],
+  2: [
+    { before:"I packed apples, bananas", after:" and grapes.", answer:',', choices:[',','.','!'] },
+    { before:"For the picnic we need plates, cups", after:" and napkins.", answer:',', choices:[',','.','?'] },
+    { before:"My bag has a book, a pencil", after:" and a ruler.", answer:',', choices:[',','.','!'] },
+    { before:"I don", after:"t like spiders.", answer:"'", choices:["'",',','.'] },
+    { before:"It", after:"s raining outside.", answer:"'", choices:["'",',','.'] },
+    { before:"She can", after:"t find her shoes.", answer:"'", choices:["'",',','.'] },
+    { before:"We didn", after:"t finish our lunch.", answer:"'", choices:["'",',','.'] },
+    { before:"Have you seen my cat", after:"", answer:'?', choices:['?','.','!'] },
+    { before:"That is amazing", after:"", answer:'!', choices:['!','.','?'] },
+    { before:"We ate lunch at noon", after:"", answer:'.', choices:['.','?','!'] },
+    { before:"I have a red, blue", after:" and green kite.", answer:',', choices:[',','.','?'] },
+    { before:"Look out, it", after:"s falling!", answer:"'", choices:["'",',','.'] },
+  ],
+  3: [
+    { before:"That is Sam", after:"s red bike.", answer:"'", choices:["'",',','.'] },
+    { before:"This is the dog", after:"s bowl.", answer:"'", choices:["'",',','.'] },
+    { before:"The girl", after:"s coat is on the hook.", answer:"'", choices:["'",',','.'] },
+    { before:'"Be careful,', after:' warned Dad.', answer:'"', choices:['"',"'",','] },
+    { before:'"Look at that bird,', after:' said Amy.', answer:'"', choices:['"',"'",','] },
+    { before:'"Dinner is ready,', after:' called Mum.', answer:'"', choices:['"',"'",','] },
+    { before:'"Where are you going?', after:' asked Grandma.', answer:'"', choices:['"',"'",','] },
+    { before:"He shouted", after:' "Wait for me!"', answer:',', choices:[',','.','!'] },
+    { before:"We visited London, Paris", after:" and Rome.", answer:',', choices:[',','.','!'] },
+    { before:"I can", after:"t wait for the party.", answer:"'", choices:["'",',','.'] },
+    { before:"Is that your sister", after:"s hat?", answer:"'", choices:["'",',','.'] },
+  ],
+  4: [
+    { before:"Those are the girls", after:" bags.", answer:"'", choices:["'",',','.'] },
+    { before:"The dogs", after:" leads are by the door.", answer:"'", choices:["'",',','.'] },
+    { before:"My parents", after:" car is red.", answer:"'", choices:["'",',','.'] },
+    { before:"After the rain stopped", after:" we went outside.", answer:',', choices:[',','.','!'] },
+    { before:"Later that day", after:" we visited the museum.", answer:',', choices:[',','.','!'] },
+    { before:"Before the game started", after:" we warmed up.", answer:',', choices:[',','.','!'] },
+    { before:"Suddenly", after:" the lights went out.", answer:',', choices:[',','.','!'] },
+    { before:'"This is fantastic,', after:' exclaimed Ben.', answer:'"', choices:['"',"'",','] },
+    { before:"The teacher said", after:' "Sit down please."', answer:',', choices:[',','.','!'] },
+    { before:"That is the boys", after:" football.", answer:"'", choices:["'",',','.'] },
+    { before:"In the morning", after:" we feed the chickens.", answer:',', choices:[',','.','!'] },
+  ],
+  5: [
+    { before:"My dog (a small terrier", after:" loves to run.", answer:')', choices:[')',',','.'] },
+    { before:"The trip (which took two hours", after:" was tiring.", answer:')', choices:[')',',','.'] },
+    { before:"Our teacher, Mrs Jones", after:" is very kind.", answer:',', choices:[',','.','!'] },
+    { before:"Let's eat", after:" Grandma!", answer:',', choices:[',','.','!'] },
+    { before:"The dog, which was tired", after:" fell asleep.", answer:',', choices:[',','.','!'] },
+    { before:"My best friend (who lives next door", after:" is coming over.", answer:')', choices:[')',',','.'] },
+    { before:"I love cooking", after:" my family, and my pets.", answer:',', choices:[',','.','!'] },
+    { before:"The results (which surprised everyone", after:" were announced.", answer:')', choices:[')',',','.'] },
+    { before:"My uncle, a firefighter", after:" visited our school.", answer:',', choices:[',','.','!'] },
+    { before:"Shall we go", after:" or stay here?", answer:',', choices:[',','.','!'] },
+  ],
+  6: [
+    { before:"You will need the following", after:" a pencil, a ruler and a rubber.", answer:':', choices:[':',',','.'] },
+    { before:"I have a test tomorrow", after:" I need to revise tonight.", answer:';', choices:[';',',','.'] },
+    { before:"She loves reading", after:" he prefers sport.", answer:';', choices:[';',',','.'] },
+    { before:"There is one thing I want", after:" a new bike.", answer:':', choices:[':',',','.'] },
+    { before:"She is a well", after:"known author.", answer:'-', choices:['-',',','.'] },
+    { before:"Remember to bring these items", after:" a coat, boots and gloves.", answer:':', choices:[':',',','.'] },
+    { before:"The weather was cold", after:" we still went outside.", answer:';', choices:[';',',','.'] },
+    { before:"He is my brother", after:"in-law.", answer:'-', choices:['-',',','.'] },
+    { before:"Two subjects are compulsory", after:" maths and English.", answer:':', choices:[':',',','.'] },
+    { before:"I finished my homework", after:" I still checked it twice.", answer:';', choices:[';',',','.'] },
+  ],
+};
+
+/* Each entry is the FULL, correctly-cased sentence, split into words. capIndex marks
+   the one word shown lower-cased to the child (all other words stay correctly cased as
+   authored — most sentences legitimately have more than one capital letter, but only
+   one is the thing being tested at a time). */
+const CAPITAL_BANK = {
+  1: [
+    { words:["The","dog","ran","fast."], capIndex:0 },
+    { words:["My","name","is","Leo."], capIndex:3 },
+    { words:["We","live","in","London."], capIndex:3 },
+    { words:["I","like","ice","cream."], capIndex:0 },
+    { words:["Today","is","Monday."], capIndex:2 },
+    { words:["Can","you","see","Amir?"], capIndex:3 },
+    { words:["She","went","to","Paris."], capIndex:3 },
+    { words:["It","is","Friday","today."], capIndex:2 },
+    { words:["This","is","my","dog","Rex."], capIndex:4 },
+    { words:["We","play","on","Tuesday."], capIndex:3 },
+    { words:["I","have","a","cat."], capIndex:0 },
+    { words:["Our","teacher","is","Miss","Patel."], capIndex:4 },
+  ],
+  2: [
+    { words:["We","went","to","Scotland","in","June."], capIndex:3 },
+    { words:["My","brother","is","called","Ali."], capIndex:4 },
+    { words:["Next","Saturday","we","are","going","swimming."], capIndex:1 },
+    { words:["I","was","born","in","March."], capIndex:4 },
+    { words:["Our","school","trip","is","on","Monday."], capIndex:5 },
+    { words:["Have","you","met","Sophie","yet?"], capIndex:3 },
+    { words:["She","lives","near","Cardiff","now."], capIndex:3 },
+    { words:["We","saw","a","film","on","Sunday."], capIndex:5 },
+    { words:["Grandad","gave","me","a","present."], capIndex:0 },
+    { words:["I","think","today","is","Wednesday."], capIndex:4 },
+  ],
+  3: [
+    { words:["Dr","Khan","checked","my","ear."], capIndex:0 },
+    { words:["We","celebrate","Christmas","in","December."], capIndex:4 },
+    { words:["Mr","Ahmed","teaches","art."], capIndex:0 },
+    { words:["My","holiday","starts","in","August."], capIndex:4 },
+    { words:["I","met","Dr","Green","yesterday."], capIndex:2 },
+    { words:["Mrs","Wilson","runs","the","shop."], capIndex:0 },
+    { words:["Ramadan","begins","next","month."], capIndex:0 },
+    { words:["We","study","French","at","school."], capIndex:2 },
+    { words:["My","cousin","speaks","Spanish."], capIndex:3 },
+    { words:["Easter","is","in","April","this","year."], capIndex:3 },
+  ],
+  4: [
+    { words:["My","favourite","book","is","Matilda."], capIndex:4 },
+    { words:["We","are","reading","about","Egypt."], capIndex:4 },
+    { words:["She","is","British","and","speaks","Welsh."], capIndex:2 },
+    { words:["The","Vikings","invaded","long","ago."], capIndex:1 },
+    { words:["Our","class","is","learning","about","Diwali."], capIndex:5 },
+    { words:["I","support","Manchester","United."], capIndex:2 },
+    { words:["We","visited","Big","Ben."], capIndex:2 },
+    { words:["My","teacher","is","Mr","Osei."], capIndex:3 },
+    { words:["The","story","is","called","Cinderella."], capIndex:4 },
+    { words:["We","learned","about","Remembrance","Day."], capIndex:3 },
+  ],
+  5: [
+    { words:["Although","it","was","raining,","we","went","to","Brighton."], capIndex:7 },
+    { words:["The","author","of","the","book","is","Rick","Riordan."], capIndex:6 },
+    { words:["When","we","visited","Edinburgh,","it","was","cold."], capIndex:3 },
+    { words:["My","grandmother,","who","is","Italian,","cooks","pasta."], capIndex:4 },
+    { words:["The","novel","is","set","during","the","Victorian","era."], capIndex:6 },
+    { words:["Despite","the","rain,","the","match","continued","in","Wales."], capIndex:7 },
+    { words:["Our","head","teacher,","Mrs","Ahmed,","gave","a","speech."], capIndex:3 },
+    { words:["The","River","Thames","flows","through","London."], capIndex:1 },
+    { words:["I","would","love","to","visit","Japan","one","day."], capIndex:5 },
+    { words:["The","charity","raised","money","for","Comic","Relief."], capIndex:5 },
+  ],
+  6: [
+    { words:["Having","finished","her","homework,","Aisha","watched","television."], capIndex:4 },
+    { words:["The","committee,","led","by","Mr","Barnes,","made","a","decision."], capIndex:4 },
+    { words:["Since","moving","to","Bristol,","we","have","made","new","friends."], capIndex:3 },
+    { words:["The","novel,","written","by","Michael","Morpurgo,","won","an","award."], capIndex:4 },
+    { words:["Whenever","we","visit","Grandma,","she","bakes","a","cake."], capIndex:3 },
+    { words:["The","expedition","to","Antarctica","took","several","months."], capIndex:3 },
+    { words:["Although","he","was","nervous,","Jamal","gave","an","excellent","speech."], capIndex:4 },
+    { words:["The","festival,","held","every","August","in","Leeds,","was","brilliant."], capIndex:6 },
+    { words:["My","teacher","recommended","a","book","by","Roald","Dahl."], capIndex:6 },
+    { words:["During","the","summer,","my","family","travelled","to","Portugal."], capIndex:7 },
+  ],
+};
+
+function buildPunctQuestions(year, type){
+  const levelKey = `punct-${year}-${type}`;
+  const stats = loadLevelStats(levelKey);
+  let pool = [];
+  if(type==='punct' || type==='mixed'){
+    pool = pool.concat(PUNCT_BANK[year].map(item=> ({
+      kind:'punct', before:item.before, after:item.after, answer:item.answer, choices:item.choices,
+      factKey: `p_${item.before}${item.answer}${item.after}`
+    })));
+  }
+  if(type==='capital' || type==='mixed'){
+    pool = pool.concat(CAPITAL_BANK[year].map(item=> ({
+      kind:'capital', words:item.words, capIndex:item.capIndex,
+      factKey: `c_${item.words.join(' ')}`
+    })));
+  }
+  const weights = pool.map(item=>{
+    const s = stats[item.factKey] || { correct:0, wrong:0 };
+    if(s.correct>=3 && s.wrong===0) return 0.4;
+    return 1 + s.wrong*2;
+  });
+  const chosen = weightedFill(pool, weights, QUESTIONS_PER_TEST);
+  return chosen.map(item=> item.kind==='punct' ? { ...item, choices: shuffle(item.choices) } : item);
+}
+
+function buildQuestions(){
+  if(state.subject==='times') return buildTimesQuestions(state.table, state.operation);
+  if(state.subject==='punctuation') return buildPunctQuestions(state.punctYear, state.punctType);
+  return buildSpellingQuestions(state.year);
+}
+
+const OP_LABEL = { mult:'✖️ Multiply', div:'➗ Divide', add:'➕ Add', sub:'➖ Subtract', mixed:'🔀 Mixed' };
+const SUBJECT_ICON = { times:'🔢', punctuation:'✍️', spelling:'📖' };
+
+function computeLevel(){
+  if(state.subject==='times'){
+    const yearLabel = currentNfYearConfig().label;
+    const tableLabel = state.table==='mixed' ? 'Mixed 0-12' : `${state.table}s`;
+    state.levelKey = `times-${state.nfYear}-${state.table}-${state.operation}`;
+    state.levelLabel = `${yearLabel} · ${tableLabel} · ${OP_LABEL[state.operation]}`;
+  } else if(state.subject==='punctuation'){
+    const yearLabel = PUNCT_YEAR_LABELS[state.punctYear];
+    state.levelKey = `punct-${state.punctYear}-${state.punctType}`;
+    state.levelLabel = `${yearLabel} · ${PUNCT_TYPE_LABEL[state.punctType]}`;
+  } else {
+    state.levelKey = `spelling-${state.year}`;
+    state.levelLabel = YEAR_CONFIG[state.year].label;
+  }
+}
+
+/* ---- Speak the word / equation aloud ---- */
+let cachedVoice = null;
+if('speechSynthesis' in window){
+  speechSynthesis.onvoiceschanged = ()=>{ cachedVoice = null; };
+}
+function pickVoice(){
+  if(cachedVoice) return cachedVoice;
+  const voices = speechSynthesis.getVoices();
+  cachedVoice = voices.find(v=>v.lang==='en-GB') || voices.find(v=>v.lang && v.lang.startsWith('en')) || voices[0] || null;
+  return cachedVoice;
+}
+function speakWord(text){
+  if(!('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.rate = 0.85;
+  const voice = pickVoice();
+  if(voice) utter.voice = voice;
+  speechSynthesis.speak(utter);
+}
+const OP_SPOKEN = { '×':'times', '÷':'divided by', '+':'plus', '-':'minus' };
+function speakCurrentQuestion(q){
+  if(state.subject==='times'){
+    const opWord = OP_SPOKEN[q.op];
+    let phrase;
+    if(q.blank==='result') phrase = `${q.left} ${opWord} ${q.right}`;
+    else if(q.blank==='left') phrase = `what number ${opWord} ${q.right} equals ${q.result}`;
+    else phrase = `${q.left} ${opWord} what number equals ${q.result}`;
+    speakWord(phrase);
+  } else if(state.subject==='punctuation'){
+    speakWord(q.kind==='punct' ? `${q.before} ${q.after}`.trim() : q.words.join(' '));
+  } else {
+    speakWord(q.word);
+  }
+}
+
+/* ---- Timo the mascot ---- */
+const TIMO_AVATAR_SVG = `
+<svg viewBox="0 0 120 130" xmlns="http://www.w3.org/2000/svg">
+  <rect x="24" y="96" width="72" height="34" rx="16" fill="#7c3aed"/>
+  <path d="M28 55 Q16 92 30 122 L47 122 Q38 90 41 55 Z" fill="#D4A24A"/>
+  <path d="M92 55 Q104 92 90 122 L73 122 Q82 90 79 55 Z" fill="#D4A24A"/>
+  <rect x="26" y="24" width="68" height="68" rx="18" fill="#FFD9B3"/>
+  <rect x="21" y="54" width="12" height="12" rx="4" fill="#FFD9B3"/>
+  <rect x="87" y="54" width="12" height="12" rx="4" fill="#FFD9B3"/>
+  <circle cx="34" cy="38" r="13" fill="#D4A24A"/>
+  <circle cx="46" cy="25" r="14" fill="#D4A24A"/>
+  <circle cx="62" cy="21" r="15" fill="#D4A24A"/>
+  <circle cx="78" cy="25" r="14" fill="#D4A24A"/>
+  <circle cx="88" cy="40" r="13" fill="#D4A24A"/>
+  <circle cx="30" cy="52" r="10" fill="#D4A24A"/>
+  <circle cx="92" cy="52" r="10" fill="#D4A24A"/>
+  <circle cx="42" cy="69" r="6" fill="#FF9FB2" opacity="0.55"/>
+  <circle cx="78" cy="69" r="6" fill="#FF9FB2" opacity="0.55"/>
+  <line x1="33" y1="55" x2="24" y2="50" stroke="#20232e" stroke-width="3" stroke-linecap="round"/>
+  <line x1="87" y1="55" x2="96" y2="50" stroke="#20232e" stroke-width="3" stroke-linecap="round"/>
+  <rect x="33" y="45" width="26" height="26" rx="7" fill="#eaf6ff" stroke="#20232e" stroke-width="3"/>
+  <rect x="61" y="45" width="26" height="26" rx="7" fill="#eaf6ff" stroke="#20232e" stroke-width="3"/>
+  <line x1="59" y1="58" x2="61" y2="58" stroke="#20232e" stroke-width="3"/>
+  <circle cx="46" cy="58" r="3" fill="#20232e"/>
+  <circle cx="74" cy="58" r="3" fill="#20232e"/>
+  <path d="M50 75 Q60 83 70 75" stroke="#20232e" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>`;
+
+/* ---------------- Screens ---------------- */
+function renderHome(){
+  clearTimeout(state.advanceTimeout);
+  clearInterval(state.timerInterval);
+  applyTheme(null);
+  const app = document.getElementById('app');
+  app.innerHTML = `
+    <div class="screen">
+    <button class="mute-toggle" id="muteBtn" type="button" title="${state.muted ? 'Sound is off' : 'Sound is on'}">${state.muted ? '🔇' : '🔊'}</button>
+    <h1>🧙 Timo Fun Learning Wizards</h1>
+    <div class="subtitle">Choose what you want to practise</div>
+
+    <div class="mascot-row">
+      <div class="mascot-avatar">${TIMO_AVATAR_SVG}</div>
+      <div class="speech-bubble">
+        <strong>Hi, I'm Timo! (T-I-M-O) 👋</strong>
+        Welcome to Timo Fun Learning Wizards! I want to help you with spelling, number facts and punctuation (capital letters too!) so we can get smarter together! 🚀
+      </div>
+    </div>
+
+    <div class="subject-grid">
+      <button class="subject-card card-spelling" id="subjectSpelling" type="button">
+        <div class="subject-icon">📖</div>
+        <div class="subject-title">Spelling</div>
+        <div class="subject-desc">UK words &middot; Years 2-6</div>
+      </button>
+      <button class="subject-card card-times" id="subjectTimes" type="button">
+        <div class="subject-icon">🔢</div>
+        <div class="subject-title">Number Facts</div>
+        <div class="subject-desc">Add, subtract, multiply &amp; divide &middot; 0-12</div>
+      </button>
+      <button class="subject-card card-punctuation" id="subjectPunctuation" type="button">
+        <div class="subject-icon">✍️</div>
+        <div class="subject-title">Punctuation</div>
+        <div class="subject-desc">Punctuation &amp; capitals &middot; Years 1-6</div>
+      </button>
+    </div>
+
+    <div class="home-links">
+      <button id="lbBtn">🏅 Leaderboard</button>
+      <button id="progressBtn">📈 My Progress</button>
+      <button id="insightsBtn">🏫 Class Insights</button>
+      <button id="aboutBtn">ℹ️ About</button>
+      <button id="privacyBtn">🔒 Privacy Policy</button>
+    </div>
+    </div>
+  `;
+
+  state.subject = null;
+  state.year = null;
+  state.mode = null;
+  state.table = null;
+  state.operation = null;
+  state.nfYear = null;
+  state.punctYear = null;
+  state.punctType = null;
+  state.name = null;
+
+  document.getElementById('subjectSpelling').addEventListener('click', ()=>{ state.subject='spelling'; renderSetup(); });
+  document.getElementById('subjectTimes').addEventListener('click', ()=>{ state.subject='times'; renderSetup(); });
+  document.getElementById('subjectPunctuation').addEventListener('click', ()=>{ state.subject='punctuation'; renderSetup(); });
+  document.getElementById('lbBtn').addEventListener('click', ()=> renderLeaderboard(null));
+  document.getElementById('progressBtn').addEventListener('click', renderProgressSearch);
+  document.getElementById('insightsBtn').addEventListener('click', renderClassInsights);
+  document.getElementById('aboutBtn').addEventListener('click', renderAbout);
+  document.getElementById('privacyBtn').addEventListener('click', renderPrivacy);
+  document.getElementById('muteBtn').addEventListener('click', ()=>{ toggleMuted(); renderHome(); });
+}
+
+/* ---- Setup wizard: one simple choice per screen, easy for young children ---- */
+function getSetupSteps(){
+  if(state.subject==='times') return ['name','year','operation','numbers','mode'];
+  if(state.subject==='punctuation') return ['name','year','ptype','mode'];
+  return ['name','year','mode'];
+}
+
+function renderSetup(){
+  applyTheme(state.subject);
+  state.setupStep = 0;
+  renderSetupStep();
+}
+
+/* Used when returning from Results ("Change Level / Mode") — same student,
+   so we skip straight past the name step. */
+function continueSetup(){
+  applyTheme(state.subject);
+  state.setupStep = 1;
+  renderSetupStep();
+}
+
+function goToNextStep(){
+  state.setupStep += 1;
+  renderSetupStep();
+}
+
+function goToPrevStep(){
+  if(state.setupStep <= 0){
+    renderHome();
+  } else {
+    state.setupStep -= 1;
+    renderSetupStep();
+  }
+}
+
+function renderSetupStep(){
+  const step = getSetupSteps()[state.setupStep];
+  if(step==='name') renderNameStep();
+  else if(step==='year') renderYearStep();
+  else if(step==='operation') renderOperationStep();
+  else if(step==='numbers') renderNumbersStep();
+  else if(step==='ptype') renderPunctTypeStep();
+  else if(step==='mode') renderModeStep();
+}
+
+/* Shared chrome for every wizard step: a back button and a row of progress dots. */
+function renderStepShell(innerHtml){
+  const app = document.getElementById('app');
+  const steps = getSetupSteps();
+  const dots = steps.map((_,i)=> `<span class="step-dot ${i===state.setupStep?'active':i<state.setupStep?'done':''}"></span>`).join('');
+  app.innerHTML = `
+    <div class="screen">
+    <button class="back-btn" id="setupBackBtn" type="button">← Back</button>
+    <div class="step-dots">${dots}</div>
+    ${innerHtml}
+    </div>
+  `;
+  document.getElementById('setupBackBtn').addEventListener('click', goToPrevStep);
+}
+
+function renderNameStep(){
+  const icon = state.subject==='times' ? '🔢' : state.subject==='punctuation' ? '✍️' : '📖';
+  renderStepShell(`
+    <h1>${icon} What's your name?</h1>
+    <div class="subtitle">Let's get started!</div>
+    <input type="text" id="nameInput" class="name-input step-name-input" placeholder="Type your name" maxlength="24">
+    <button class="big-btn" id="nameNextBtn" disabled>Continue →</button>
+  `);
+  const input = document.getElementById('nameInput');
+  const nextBtn = document.getElementById('nameNextBtn');
+  input.value = state.name || '';
+  input.focus();
+  const refresh = ()=>{ nextBtn.disabled = input.value.trim().length===0; };
+  refresh();
+  input.addEventListener('input', refresh);
+  input.addEventListener('keydown', e=>{ if(e.key==='Enter' && input.value.trim()) confirmName(); });
+  nextBtn.addEventListener('click', confirmName);
+  function confirmName(){
+    state.name = input.value.trim() || 'Anonymous Wizard';
+    goToNextStep();
+  }
+}
+
+function renderYearStep(){
+  const isTimes = state.subject==='times';
+  const isPunct = state.subject==='punctuation';
+  const years = isTimes ? ['R',1,2,3,4,5,6] : isPunct ? [1,2,3,4,5,6] : [2,3,4,5,6];
+  const current = isTimes ? state.nfYear : isPunct ? state.punctYear : state.year;
+  renderStepShell(`
+    <h1>🎂 Which year are you in?</h1>
+    <div class="subtitle">Pick your year group</div>
+    <div class="table-grid" id="yearStepGrid">
+      ${years.map(y=>`<button class="table-btn ${String(current)===String(y)?'selected':''}" data-year="${y}">${y==='R'?'R':'Y'+y}</button>`).join('')}
+    </div>
+  `);
+  document.querySelectorAll('#yearStepGrid .table-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      if(isTimes) state.nfYear = btn.dataset.year;
+      else if(isPunct) state.punctYear = parseInt(btn.dataset.year,10);
+      else state.year = parseInt(btn.dataset.year,10);
+      goToNextStep();
+    });
+  });
+}
+
+function renderOperationStep(){
+  renderStepShell(`
+    <h1>🤔 What do you want to practise?</h1>
+    <div class="subtitle">Choose one</div>
+    <div class="op-grid" id="opStepGrid">
+      <button class="op-btn ${state.operation==='add'?'selected':''}" data-op="add">➕<br>Add</button>
+      <button class="op-btn ${state.operation==='sub'?'selected':''}" data-op="sub">➖<br>Subtract</button>
+      <button class="op-btn ${state.operation==='mult'?'selected':''}" data-op="mult">✖️<br>Multiply</button>
+      <button class="op-btn ${state.operation==='div'?'selected':''}" data-op="div">➗<br>Divide</button>
+      <button class="op-btn op-wide ${state.operation==='mixed'?'selected':''}" data-op="mixed">🔀 Mixed — all four</button>
+    </div>
+  `);
+  document.querySelectorAll('#opStepGrid .op-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      state.operation = btn.dataset.op;
+      goToNextStep();
+    });
+  });
+}
+
+function renderPunctTypeStep(){
+  renderStepShell(`
+    <h1>🤔 What do you want to practise?</h1>
+    <div class="subtitle">Choose one</div>
+    <div class="op-grid" id="ptypeStepGrid">
+      <button class="op-btn ${state.punctType==='punct'?'selected':''}" data-ptype="punct">✍️<br>Punctuation</button>
+      <button class="op-btn ${state.punctType==='capital'?'selected':''}" data-ptype="capital">🔠<br>Capital Letters</button>
+      <button class="op-btn op-wide ${state.punctType==='mixed'?'selected':''}" data-ptype="mixed">🔀 Mixed — both</button>
+    </div>
+  `);
+  document.querySelectorAll('#ptypeStepGrid .op-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      state.punctType = btn.dataset.ptype;
+      goToNextStep();
+    });
+  });
+}
+
+function renderNumbersStep(){
+  const isTimesTableOp = state.operation==='mult' || state.operation==='div';
+  const label = isTimesTableOp ? 'Which times table?' : 'Which numbers?';
+  renderStepShell(`
+    <h1>🔢 ${label}</h1>
+    <div class="subtitle">${state.operation==='div' ? "0 doesn't have any division facts!" : 'Pick Mixed for a bit of everything'}</div>
+    <div class="table-grid" id="numbersStepGrid">
+      ${['mixed',0,1,2,3,4,5,6,7,8,9,10,11,12].map(t=>{
+        const disabled = state.operation==='div' && t===0;
+        const isSelected = state.table===t || (t==='mixed' && state.table==='mixed');
+        return `<button class="table-btn ${isSelected?'selected':''}" data-table="${t}" ${disabled?'disabled':''}>${t==='mixed'?'Mixed':t}</button>`;
+      }).join('')}
+    </div>
+  `);
+  document.querySelectorAll('#numbersStepGrid .table-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      if(btn.disabled) return;
+      state.table = btn.dataset.table==='mixed' ? 'mixed' : parseInt(btn.dataset.table,10);
+      goToNextStep();
+    });
+  });
+}
+
+function renderModeStep(){
+  renderStepShell(`
+    <h1>🎮 Practice or Test?</h1>
+    <div class="subtitle">You can always come back and choose again</div>
+    <div class="mode-grid" id="modeStepGrid">
+      <button type="button" class="mode-btn" data-mode="practice">
+        <strong>🧩 Practice</strong>
+        <small>No timer. Learn at your own pace.</small>
+      </button>
+      <button type="button" class="mode-btn" data-mode="test">
+        <strong>🏆 Test</strong>
+        <small>${TEST_SECONDS_PER_Q}s per question. Score goes on the leaderboard!</small>
+      </button>
+    </div>
+  `);
+  document.querySelectorAll('#modeStepGrid .mode-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      state.mode = btn.dataset.mode;
+      startQuiz();
+    });
+  });
+}
+
+function startQuiz(){
+  clearTimeout(state.advanceTimeout);
+  computeLevel();
+  state.questions = buildQuestions();
+  state.index = 0;
+  state.score = 0;
+  state.wrongWords = [];
+  state.timerInterval = null;
+  renderQuestion();
+}
+
+function startReview(){
+  clearTimeout(state.advanceTimeout);
+  if(state.subject==='times'){
+    const seen = new Set();
+    const items = [];
+    state.wrongWords.forEach(it=>{
+      const k = `${it.table}_${it.multiplier}_${it.op}`;
+      if(!seen.has(k)){ seen.add(k); items.push(it); }
+    });
+    state.questions = items.map(it=> makeTimesQuestion({ table:it.table, multiplier:it.multiplier, op:it.op }));
+  } else if(state.subject==='punctuation'){
+    const seen = new Set();
+    state.questions = state.wrongWords.filter(q=>{
+      if(seen.has(q.factKey)) return false;
+      seen.add(q.factKey);
+      return true;
+    });
+  } else {
+    const words = [...new Set(state.wrongWords)];
+    state.questions = words.map(w=> makeQuestion(w, YEAR_CONFIG[state.year]));
+  }
+  state.index = 0;
+  state.score = 0;
+  state.wrongWords = [];
+  state.mode = 'review';
+  state.timerInterval = null;
+  renderQuestion();
+}
+
+function exitQuiz(){
+  clearInterval(state.timerInterval);
+  const label = state.mode==='test' ? 'this test' : state.mode==='review' ? 'this review' : 'this practice session';
+  if(confirm(`End ${label} and go back to the main menu? Your progress won't be saved.`)){
+    clearTimeout(state.advanceTimeout);
+    renderHome();
+  } else if(state.mode==='test'){
+    resumeTimer();
+  }
+}
+
+function renderQuestion(){
+  applyTheme(state.subject);
+  clearInterval(state.timerInterval);
+  const app = document.getElementById('app');
+  const q = state.questions[state.index];
+  const total = state.questions.length;
+
+  const modeLabel = state.mode==='test' ? 'Test' : state.mode==='review' ? 'Review' : 'Practice';
+  app.innerHTML = `
+    <div class="screen">
+    <div class="quiz-header">
+      <button class="exit-btn" id="exitBtn">✕ Exit</button>
+      <div class="level-pill">${state.levelLabel} &middot; ${modeLabel}</div>
+      <div class="score-pill">⭐ ${state.score}</div>
+    </div>
+    <div class="progress-row">
+      <div class="progress-bar-outer"><div class="progress-bar-inner" style="width:${(state.index/total)*100}%"></div></div>
+      <span class="progress-count">${state.index+1}/${total}</span>
+    </div>
+    ${state.mode==='test' ? `<div class="timer-bar-outer"><div class="timer-bar-inner" id="timerBar" style="width:100%"></div></div>` : ''}
+
+    <button class="speak-btn" id="speakBtn" type="button">🔊 ${state.subject==='times' ? 'Hear it' : state.subject==='punctuation' ? 'Hear the sentence' : 'Hear the word'}</button>
+    <div id="answerArea"></div>
+    <div class="feedback" id="feedback"></div>
+
+    <div class="quiz-buttons">
+      <button class="big-btn" id="checkBtn">Check ✅</button>
+    </div>
+    </div>
+  `;
+
+  document.getElementById('exitBtn').addEventListener('click', exitQuiz);
+  document.getElementById('speakBtn').addEventListener('click', ()=> speakCurrentQuestion(q));
+  speakCurrentQuestion(q);
+
+  state.selectedChoiceIdx = null;
+  if(state.subject==='times'){
+    wireTimesInputs(renderTimesAnswerArea(q));
+  } else if(state.subject==='punctuation'){
+    wireChoiceInputs(q.kind==='punct' ? renderPunctAnswerArea(q) : renderCapitalAnswerArea(q));
+  } else {
+    wireSpellingInputs(renderSpellingAnswerArea(q));
+  }
+
+  document.getElementById('checkBtn').addEventListener('click', ()=> submitAnswer());
+
+  if(state.mode==='test'){
+    state.secondsLeft = TEST_SECONDS_PER_Q;
+    startTimer();
+  }
+
+  state.answered = false;
+}
+
+function renderSpellingAnswerArea(q){
+  const area = document.getElementById('answerArea');
+  area.innerHTML = `<div class="word-box" id="wordBox"></div>`;
+  const wordBox = document.getElementById('wordBox');
+  q.word.split('').forEach((letter, idx)=>{
+    if(q.positions.includes(idx)){
+      const div = document.createElement('div');
+      div.className = 'blank-tile';
+      div.innerHTML = `<input type="text" maxlength="1" data-idx="${idx}" autocomplete="off">`;
+      wordBox.appendChild(div);
+    } else {
+      const div = document.createElement('div');
+      div.className = 'letter-tile';
+      div.textContent = letter;
+      wordBox.appendChild(div);
+    }
+  });
+  return [...wordBox.querySelectorAll('input')];
+}
+
+function wireSpellingInputs(inputs){
+  inputs.forEach((inp, i)=>{
+    inp.addEventListener('input', ()=>{
+      inp.value = inp.value.replace(/[^a-zA-Z]/g,'').slice(0,1);
+      if(inp.value && i < inputs.length-1) inputs[i+1].focus();
+    });
+    inp.addEventListener('keydown', (e)=>{
+      if(e.key==='Backspace' && !inp.value && i>0) inputs[i-1].focus();
+      if(e.key==='Enter') submitAnswer();
+    });
+  });
+  if(inputs[0]) inputs[0].focus();
+}
+
+function renderTimesAnswerArea(q){
+  const area = document.getElementById('answerArea');
+  const slotHtml = (name, value) => q.blank===name
+    ? `<input type="text" inputmode="numeric" class="answer-input" id="answerInput" maxlength="3" autocomplete="off">`
+    : `<span>${value}</span>`;
+  area.innerHTML = `
+    <div class="equation-box">
+      ${slotHtml('left', q.left)}<span>${q.op}</span>${slotHtml('right', q.right)}<span>=</span>${slotHtml('result', q.result)}
+    </div>
+  `;
+  return [document.getElementById('answerInput')];
+}
+
+function wireTimesInputs(inputs){
+  const inp = inputs[0];
+  inp.addEventListener('input', ()=>{
+    inp.value = inp.value.replace(/[^0-9]/g,'').slice(0,3);
+  });
+  inp.addEventListener('keydown', (e)=>{
+    if(e.key==='Enter') submitAnswer();
+  });
+  inp.focus();
+}
+
+/* Punctuation and capital-letter questions are both "tap the correct choice"
+   — a sentence with a gap plus a few punctuation-mark buttons, or the sentence
+   itself shown as tappable word chips. Tapping selects (matching the
+   year/table/op button pattern elsewhere); Check still confirms the answer. */
+function renderPunctAnswerArea(q){
+  const area = document.getElementById('answerArea');
+  area.innerHTML = `
+    <div class="sentence-box">${escapeHtml(q.before)}<span class="sentence-blank">&nbsp;</span>${escapeHtml(q.after)}</div>
+    <div class="choice-row" id="choiceRow">
+      ${q.choices.map((c,i)=>`<button type="button" class="choice-btn" data-idx="${i}">${escapeHtml(c)}</button>`).join('')}
+    </div>
+  `;
+  return [...document.querySelectorAll('#choiceRow .choice-btn')];
+}
+
+function renderCapitalAnswerArea(q){
+  const area = document.getElementById('answerArea');
+  area.innerHTML = `
+    <div class="sentence-box" style="font-size:1.1em;">Tap the word that needs a capital letter</div>
+    <div class="choice-row" id="choiceRow">
+      ${q.words.map((w,i)=>`<button type="button" class="choice-btn word-chip" data-idx="${i}">${escapeHtml(i===q.capIndex ? w.toLowerCase() : w)}</button>`).join('')}
+    </div>
+  `;
+  return [...document.querySelectorAll('#choiceRow .choice-btn')];
+}
+
+function wireChoiceInputs(buttons){
+  buttons.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      buttons.forEach(b=>b.classList.remove('selected'));
+      btn.classList.add('selected');
+      state.selectedChoiceIdx = parseInt(btn.dataset.idx,10);
+    });
+  });
+}
+
+/* Counts down from the real wall-clock end time rather than decrementing a
+   counter once per tick — a setInterval tick can be delayed or throttled
+   (e.g. a backgrounded browser tab), and re-deriving from Date.now() each
+   tick means the countdown is always accurate to actual elapsed time. */
+function startTimer(){
+  const bar = document.getElementById('timerBar');
+  if(!bar) return;
+  state.timerEndAt = Date.now() + state.secondsLeft*1000;
+  clearInterval(state.timerInterval);
+  const tick = ()=>{
+    const remainingMs = state.timerEndAt - Date.now();
+    state.secondsLeft = Math.max(0, Math.ceil(remainingMs/1000));
+    bar.style.width = Math.max(0,(state.secondsLeft/TEST_SECONDS_PER_Q)*100) + '%';
+    if(remainingMs<=0){
+      clearInterval(state.timerInterval);
+      submitAnswer(true);
+    }
+  };
+  tick();
+  state.timerInterval = setInterval(tick, 1000);
+}
+
+function resumeTimer(){
+  if(!state.answered) startTimer();
+}
+
+function submitAnswer(timedOut){
+  if(state.answered) return;
+  state.answered = true;
+  clearInterval(state.timerInterval);
+
+  const q = state.questions[state.index];
+  let correct;
+  let factKey;
+
+  if(state.subject==='times'){
+    const inp = document.getElementById('answerInput');
+    const val = parseInt((inp.value||'').trim(), 10);
+    correct = !timedOut && val === q.answer;
+    inp.disabled = true;
+    inp.style.background = correct ? '#eafcf1' : '#ffeef0';
+    inp.style.borderColor = correct ? 'var(--success)' : 'var(--danger)';
+    inp.classList.add(correct ? 'tile-correct' : 'tile-wrong');
+    if(!correct) inp.value = q.answer;
+    factKey = q.factKey;
+  } else if(state.subject==='punctuation'){
+    const buttons = [...document.querySelectorAll('#choiceRow .choice-btn')];
+    const selectedIdx = state.selectedChoiceIdx;
+    const correctIdx = q.kind==='punct' ? q.choices.indexOf(q.answer) : q.capIndex;
+    correct = !timedOut && selectedIdx === correctIdx;
+    buttons.forEach((btn,i)=>{
+      btn.disabled = true;
+      if(i===correctIdx) btn.classList.add('choice-correct');
+      else if(i===selectedIdx) btn.classList.add('choice-wrong');
+    });
+    factKey = q.factKey;
+  } else {
+    const inputs = [...document.querySelectorAll('#wordBox input')];
+    correct = !timedOut;
+    inputs.forEach(inp=>{
+      const idx = parseInt(inp.dataset.idx,10);
+      const val = (inp.value||'').toLowerCase();
+      const isRight = val === q.word[idx];
+      if(!isRight) correct = false;
+      inp.disabled = true;
+      inp.style.background = isRight ? '#eafcf1' : '#ffeef0';
+      inp.style.borderColor = isRight ? 'var(--success)' : 'var(--danger)';
+      inp.classList.add(isRight ? 'tile-correct' : 'tile-wrong');
+      if(!isRight) inp.value = q.word[idx];
+    });
+    factKey = q.word;
+  }
+
+  saveStat(state.levelKey, factKey, correct);
+  if(!correct){
+    if(state.subject==='times') state.wrongWords.push({ table:q.table, multiplier:q.multiplier, op:q.op });
+    else if(state.subject==='punctuation') state.wrongWords.push(q);
+    else state.wrongWords.push(q.word);
+  }
+
+  document.getElementById('checkBtn').classList.add('hidden');
+  const fb = document.getElementById('feedback');
+  if(correct){
+    state.score += 1;
+    fb.textContent = "Correct! 🎉";
+    fb.className = "feedback correct";
+    playCorrectSound();
+  } else {
+    playWrongSound();
+    let correctText;
+    if(state.subject==='times') correctText = `${q.left} ${q.op} ${q.right} = ${q.result}`;
+    else if(state.subject==='punctuation'){
+      correctText = q.kind==='punct'
+        ? `"${q.before}${q.answer}${q.after}"`
+        : `"${q.words.join(' ')}"`;
+    }
+    else correctText = `"${q.word}"`;
+    fb.textContent = timedOut ? `Time's up! It was ${correctText}` : `Not quite — it was ${correctText}`;
+    fb.className = "feedback wrong";
+  }
+
+  state.advanceTimeout = setTimeout(()=>{
+    state.advanceTimeout = null;
+    state.index += 1;
+    if(state.index >= state.questions.length){
+      finishQuiz();
+    } else {
+      renderQuestion();
+    }
+  }, 2200);
+}
+
+function finishQuiz(){
+  const total = state.questions.length;
+  const pct = Math.round((state.score/total)*100);
+
+  if(state.mode==='review'){
+    renderReviewComplete(total);
+    return;
+  }
+
+  let grade, emoji, tier;
+  if(pct===100){ grade="Platinum Wizard"; emoji="🏆"; tier="platinum"; }
+  else if(pct>=80){ grade="Gold Wizard"; emoji="🥇"; tier="gold"; }
+  else if(pct>=60){ grade="Silver Wizard"; emoji="🥈"; tier="silver"; }
+  else if(pct>=40){ grade="Bronze Wizard"; emoji="🥉"; tier="bronze"; }
+  else { grade="Keep Practicing"; emoji="📚"; tier="practice"; }
+
+  if(state.mode==='test'){
+    saveToLeaderboard({ name: state.name, subject: state.subject, levelKey: state.levelKey, levelLabel: state.levelLabel, score: state.score, total });
+  }
+
+  const newBadges = recordProgress();
+  const streak = getStudentProgress(state.name).streak.count;
+
+  state.lastResults = { pct, grade, emoji, tier, total, mode: state.mode, score: state.score, streak, newBadges };
+  renderResults(pct, grade, emoji, tier, total, state.score, streak, newBadges);
+}
+
+function renderResults(pct, grade, emoji, tier, total, score, streak, newBadges){
+  applyTheme(state.subject);
+  const app = document.getElementById('app');
+  const wrongCount = (state.wrongWords || []).length;
+  const itemWord = state.subject==='times' ? 'Fact' : state.subject==='punctuation' ? 'Sentence' : 'Word';
+  const badgeCallout = (newBadges && newBadges.length>0) ? `
+    <div class="new-badge-banner">
+      ${newBadges.map(b=>`<div>${b.icon} <strong>New badge:</strong> ${escapeHtml(b.name)}</div>`).join('')}
+    </div>` : '';
+  const streakBanner = (streak && streak>=2) ? `<div class="streak-banner">🔥 ${streak}-day streak — keep it up!</div>` : '';
+  app.innerHTML = `
+    <div class="screen">
+    <h1>Results</h1>
+    <div class="medal medal-${tier}">${emoji}</div>
+    <div class="score-big">${score} / ${total}</div>
+    <div class="badge">${grade} &middot; ${pct}%</div>
+    ${streakBanner}
+    ${badgeCallout}
+    <div id="confettiHost" style="position:relative;height:0;"></div>
+
+    ${wrongCount>0 ? `<button class="big-btn btn-warning" id="reviewBtn">📝 Review ${wrongCount} Tricky ${itemWord}${wrongCount===1?'':'s'}</button>` : ''}
+    <button class="big-btn btn-success" id="againBtn">Play Again (${state.levelLabel}) 🔁</button>
+    <button class="big-btn btn-info" id="changeBtn">Change Level / Mode 🔀</button>
+    <button class="link-btn" id="progressBtn2">📈 My Progress</button>
+    ${state.mode==='test' ? `<button class="link-btn" id="lbBtn2">View Leaderboard 🏅</button>` : ''}
+    </div>
+  `;
+
+  if(pct>=80) launchConfetti();
+
+  const reviewBtn = document.getElementById('reviewBtn');
+  if(reviewBtn) reviewBtn.addEventListener('click', startReview);
+  document.getElementById('againBtn').addEventListener('click', startQuiz);
+  document.getElementById('changeBtn').addEventListener('click', continueSetup);
+  document.getElementById('progressBtn2').addEventListener('click', ()=> renderMyProgress(state.name));
+  const lbBtn2 = document.getElementById('lbBtn2');
+  if(lbBtn2) lbBtn2.addEventListener('click', ()=> renderLeaderboard(state.levelKey));
+}
+
+function renderReviewComplete(total){
+  applyTheme(state.subject);
+  const app = document.getElementById('app');
+  const itemWord = state.subject==='times' ? 'fact' : state.subject==='punctuation' ? 'sentence' : 'word';
+  app.innerHTML = `
+    <div class="screen">
+    <h1>💪 Review Complete!</h1>
+    <div class="score-big">${state.score} / ${total}</div>
+    <div class="subtitle">You practiced ${total} tricky ${itemWord}${total===1?'':'s'}.</div>
+
+    <button class="big-btn" id="backResultsBtn">Back to Results</button>
+    <button class="big-btn btn-info" id="homeBtn2">Home 🏠</button>
+    </div>
+  `;
+
+  document.getElementById('backResultsBtn').addEventListener('click', ()=>{
+    const r = state.lastResults;
+    state.mode = r.mode;
+    renderResults(r.pct, r.grade, r.emoji, r.tier, r.total, r.score, r.streak, r.newBadges);
+  });
+  document.getElementById('homeBtn2').addEventListener('click', renderHome);
+}
+
+function launchConfetti(){
+  const host = document.getElementById('app');
+  const colors = ['#7c3aed','#f59e0b','#ec4899','#22c55e','#3b82f6'];
+  for(let i=0;i<40;i++){
+    const c = document.createElement('div');
+    c.className = 'confetti';
+    c.style.left = Math.random()*100 + '%';
+    c.style.background = colors[i % colors.length];
+    c.style.animationDuration = (2+Math.random()*1.5) + 's';
+    c.style.animationDelay = (Math.random()*0.5) + 's';
+    host.appendChild(c);
+    setTimeout(()=>c.remove(), 4000);
+  }
+}
+
+/* ---------------- Leaderboard ---------------- */
+function loadLeaderboard(){
+  try{ return JSON.parse(localStorage.getItem(LB_KEY)) || []; }
+  catch(e){ return []; }
+}
+function saveToLeaderboard(entry){
+  const lb = loadLeaderboard();
+  lb.push({ ...entry, date: new Date().toLocaleDateString('en-GB') });
+  safeSetItem(LB_KEY, JSON.stringify(lb));
+}
+function renderLeaderboard(filterLevelKey){
+  applyTheme(null);
+  const app = document.getElementById('app');
+  let lb = loadLeaderboard();
+  if(filterLevelKey) lb = lb.filter(r=>r.levelKey===filterLevelKey);
+  lb.sort((a,b)=> (b.score/b.total) - (a.score/a.total));
+
+  app.innerHTML = `
+    <div class="screen">
+    <h1>🏅 Leaderboard</h1>
+    <div class="subtitle">${filterLevelKey ? (state.levelLabel + ' &middot; Test mode only') : 'All subjects &amp; levels &middot; Test mode only'}</div>
+    ${lb.length===0 ? '<p style="text-align:center;color:var(--muted);">No test scores yet — be the first!</p>' : `
+    <table class="leaderboard">
+      <tr><th>#</th><th>Name</th><th>Level</th><th>Score</th><th>Date</th></tr>
+      ${lb.map((r,i)=>`<tr><td>${i+1}</td><td>${escapeHtml(r.name)}</td><td>${SUBJECT_ICON[r.subject]||'📖'} ${escapeHtml(r.levelLabel)}</td><td>${r.score}/${r.total}</td><td>${r.date}</td></tr>`).join('')}
+    </table>`}
+    <button class="big-btn btn-info" id="backBtn">Back</button>
+    ${lb.length>0 ? `
+    <div class="quiz-buttons">
+      <button class="big-btn btn-success" id="printBtn" style="margin-top:12px;">🖨️ Print</button>
+      <button class="big-btn" id="exportBtn" style="margin-top:12px;">⬇️ Export CSV</button>
+    </div>` : ''}
+    <button class="link-btn" id="clearBtn">Clear Leaderboard (new class) 🗑️</button>
+    <button class="link-btn" id="clearStatsBtn">Reset Difficulty Tracking 🔄</button>
+    </div>
+  `;
+  document.getElementById('backBtn').addEventListener('click', renderHome);
+  document.getElementById('clearBtn').addEventListener('click', ()=>{
+    if(confirm('Clear all leaderboard scores? This cannot be undone.')){
+      safeRemoveItem(LB_KEY);
+      renderLeaderboard(filterLevelKey);
+    }
+  });
+  document.getElementById('clearStatsBtn').addEventListener('click', ()=>{
+    if(confirm('Reset which words/facts students have found tricky? This forgets all past mistakes.')){
+      safeRemoveItem(STATS_KEY);
+    }
+  });
+  const printBtn = document.getElementById('printBtn');
+  if(printBtn) printBtn.addEventListener('click', ()=> window.print());
+  const exportBtn = document.getElementById('exportBtn');
+  if(exportBtn) exportBtn.addEventListener('click', ()=> exportLeaderboardCSV(lb));
+}
+
+function exportLeaderboardCSV(lb){
+  const header = 'Name,Subject,Level,Score,Total,Date';
+  const escapeCsv = v => `"${String(v).replace(/"/g,'""')}"`;
+  const rows = lb.map(r=> [r.name, r.subject, r.levelLabel, r.score, r.total, r.date].map(escapeCsv).join(','));
+  const csv = [header, ...rows].join('\n');
+  const blob = new Blob([csv], { type:'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `leaderboard-${todayStr()}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function escapeHtml(s){
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+/* ---------------- My Progress (per-student streaks, badges, history) ---------------- */
+function renderProgressSearch(){
+  applyTheme(null);
+  const app = document.getElementById('app');
+  app.innerHTML = `
+    <div class="screen">
+    <button class="back-btn" id="progBackBtn" type="button">← Back</button>
+    <h1>📈 My Progress</h1>
+    <div class="subtitle">Type your name to see how you're doing</div>
+    <input type="text" id="progressNameInput" class="name-input" placeholder="Type your name" maxlength="24">
+    <button class="big-btn" id="progressSearchBtn">View My Progress</button>
+    </div>
+  `;
+  document.getElementById('progBackBtn').addEventListener('click', renderHome);
+  const input = document.getElementById('progressNameInput');
+  input.focus();
+  const go = ()=>{ if(input.value.trim()) renderMyProgress(input.value.trim()); };
+  document.getElementById('progressSearchBtn').addEventListener('click', go);
+  input.addEventListener('keydown', e=>{ if(e.key==='Enter') go(); });
+}
+
+function renderMyProgress(name){
+  applyTheme(null);
+  const app = document.getElementById('app');
+  const p = getStudentProgress(name);
+  const accuracy = p.totalAnswered>0 ? Math.round((p.totalCorrect/p.totalAnswered)*100) : 0;
+  const recent = p.history.slice(-8).reverse();
+
+  const badgeGrid = BADGES.map(b=>{
+    const earned = p.badges.includes(b.id);
+    return `<div class="badge-item ${earned?'earned':''}" title="${escapeHtml(b.desc)}">
+      <div class="badge-icon">${earned ? b.icon : '🔒'}</div>
+      <div class="badge-name">${escapeHtml(b.name)}</div>
+    </div>`;
+  }).join('');
+
+  const historyList = recent.length>0 ? recent.map(h=>`
+    <div class="history-row">
+      <span>${SUBJECT_ICON[h.subject]||'📖'} ${escapeHtml(h.levelLabel)}</span>
+      <span>${h.score}/${h.total}</span>
+      <span>${h.date}</span>
+    </div>`).join('') : '<p style="text-align:center;color:var(--muted);">No quizzes yet — go practise!</p>';
+
+  app.innerHTML = `
+    <div class="screen">
+    <button class="back-btn" id="progBackBtn2" type="button">← Back</button>
+    <h1>📈 ${escapeHtml(name)}'s Progress</h1>
+    <div class="stat-row">
+      <div class="stat-tile"><div class="stat-num">${p.totalCorrect}</div><div class="stat-label">Correct answers</div></div>
+      <div class="stat-tile"><div class="stat-num">${accuracy}%</div><div class="stat-label">Accuracy</div></div>
+      <div class="stat-tile"><div class="stat-num">🔥 ${p.streak.count}</div><div class="stat-label">Day streak</div></div>
+    </div>
+
+    <label>Badges (${p.badges.length}/${BADGES.length})</label>
+    <div class="badge-grid">${badgeGrid}</div>
+
+    <label>Recent quizzes</label>
+    <div class="history-list">${historyList}</div>
+    </div>
+  `;
+  document.getElementById('progBackBtn2').addEventListener('click', renderProgressSearch);
+}
+
+/* ---------------- Class Insights (for teachers): trickiest words/facts across all students ---------------- */
+function describeFact(levelKey, factKey){
+  if(levelKey.startsWith('spelling-')) return { text: factKey, subject:'spelling' };
+  if(levelKey.startsWith('punct-')) return { text: factKey.slice(2), subject:'punctuation' };
+  const parts = factKey.split('_');
+  const table = parseInt(parts[0],10);
+  const multiplier = parseInt(parts[1],10);
+  const opMap = { x:'×', d:'÷', a:'+', s:'-' };
+  const q = makeTimesQuestion({ table, multiplier, op: opMap[parts[2]] });
+  return { text: `${q.left} ${q.op} ${q.right} = ${q.result}`, subject:'times' };
+}
+
+function renderClassInsights(){
+  applyTheme(null);
+  const app = document.getElementById('app');
+  const all = loadAllStats();
+  const merge = {};
+  Object.keys(all).forEach(levelKey=>{
+    Object.keys(all[levelKey]).forEach(factKey=>{
+      const s = all[levelKey][factKey];
+      if(s.wrong<=0) return;
+      const info = describeFact(levelKey, factKey);
+      const key = info.subject+'|'+info.text;
+      if(!merge[key]) merge[key] = { text: info.text, subject: info.subject, wrong:0, correct:0 };
+      merge[key].wrong += s.wrong;
+      merge[key].correct += s.correct;
+    });
+  });
+  const rows = Object.values(merge).sort((a,b)=> b.wrong-a.wrong);
+  const spellingRows = rows.filter(r=>r.subject==='spelling').slice(0,8);
+  const timesRows = rows.filter(r=>r.subject==='times').slice(0,8);
+  const punctRows = rows.filter(r=>r.subject==='punctuation').slice(0,8);
+
+  const listHtml = list => list.length>0 ? list.map(r=>`
+    <div class="insight-row">
+      <span>${escapeHtml(r.text)}</span>
+      <span class="insight-count">missed ${r.wrong}×</span>
+    </div>`).join('') : '<p style="text-align:center;color:var(--muted);">Nothing tricky yet!</p>';
+
+  app.innerHTML = `
+    <div class="screen">
+    <button class="back-btn" id="insightsBackBtn" type="button">← Back</button>
+    <h1>🏫 Class Insights</h1>
+    <div class="subtitle">The words and facts students find trickiest, across everyone who's practised on this device</div>
+
+    <label>📖 Trickiest Spelling Words</label>
+    <div class="insight-list">${listHtml(spellingRows)}</div>
+
+    <label>🔢 Trickiest Number Facts</label>
+    <div class="insight-list">${listHtml(timesRows)}</div>
+
+    <label>✍️ Trickiest Punctuation &amp; Capitals</label>
+    <div class="insight-list">${listHtml(punctRows)}</div>
+    </div>
+  `;
+  document.getElementById('insightsBackBtn').addEventListener('click', renderHome);
+}
+
+/* ---------------- About (for parents & teachers) ---------------- */
+function renderAbout(){
+  applyTheme(null);
+  const app = document.getElementById('app');
+  app.innerHTML = `
+    <div class="screen">
+    <button class="back-btn" id="aboutBackBtn" type="button">← Back</button>
+    <h1>ℹ️ About Timo Fun Learning Wizards</h1>
+    <div class="subtitle">For parents &amp; teachers</div>
+    <div class="about-content">
+      <p><strong>What is this?</strong> Timo Fun Learning Wizards is a free practice tool for UK primary spelling (Years 2–6), number facts — addition, subtraction, times tables and division (Reception–Year 6) — and punctuation and capital letters (Years 1–6), aligned with the UK National Curriculum.</p>
+      <p><strong>How does it adapt?</strong> Questions get harder as children move up year groups, and the app quietly tracks which words or facts a child finds tricky, showing those more often until they're mastered.</p>
+      <p><strong>Is my child's data safe?</strong> Yes. Names, scores and progress are stored only in this browser, on this device. Nothing is sent to a server or shared anywhere — clearing the browser's data removes it completely.</p>
+      <p><strong>How often should we practise?</strong> Short, regular sessions (10–15 minutes, a few times a week) work best for building real fluency.</p>
+      <p><strong>For teachers:</strong> Use <em>Class Insights</em> from the home screen to see which words or facts your class finds trickiest, and <em>Export CSV</em> on the leaderboard to keep records.</p>
+    </div>
+    </div>
+  `;
+  document.getElementById('aboutBackBtn').addEventListener('click', renderHome);
+}
+
+/* ---------------- Privacy Policy ---------------- */
+function renderPrivacy(){
+  applyTheme(null);
+  const app = document.getElementById('app');
+  app.innerHTML = `
+    <div class="screen">
+    <button class="back-btn" id="privacyBackBtn" type="button">← Back</button>
+    <h1>🔒 Privacy Policy</h1>
+    <div class="subtitle">Last updated: 10 July 2026</div>
+    <div class="about-content">
+      <p><strong>The short version.</strong> Nothing you type into Timo Fun Learning Wizards ever leaves your browser. There are no accounts, no sign-ups, and no servers involved — every name, score, streak and badge is stored only on this device, in this browser.</p>
+      <p><strong>What we store, and where.</strong> When a child types a name and plays, their name, quiz scores, streaks, badges and practice history are saved using your browser's local storage (not a cookie) on that device only. This information is never transmitted to us or to anyone else — we don't have a server to send it to.</p>
+      <p><strong>About the "name" field.</strong> The name typed in is just a nickname used to tell students apart when several children share the same device (for example, on the Leaderboard or My Progress). It isn't checked or verified in any way and doesn't need to be a real name.</p>
+      <p><strong>Cookies and tracking.</strong> This app does not currently use cookies or any advertising or analytics tools. If that changes in future — for example, if we add a tool such as Google Tag Manager to understand overall usage — we will update this page to explain what is collected, and we will ask for consent first wherever the law requires it.</p>
+      <p><strong>Children using this app.</strong> Timo Fun Learning Wizards is designed for children, typically used at school or at home with adult supervision. We do not knowingly collect any personal information beyond the optional nickname described above.</p>
+      <p><strong>Clearing your data.</strong> Because nothing is stored anywhere except this browser, clearing your browser's site data (or using a different browser, device, or private/incognito window) removes everything instantly and completely — there is nothing left over anywhere else.</p>
+      <p><strong>Questions?</strong> If you have any questions about this policy, please contact your school or the person who shared this app with you.</p>
+    </div>
+    </div>
+  `;
+  document.getElementById('privacyBackBtn').addEventListener('click', renderHome);
+}
+
+/* ---------------- Init ---------------- */
+state.muted = loadMuted();
+renderHome();
+</script>
+</body>
+</html>
